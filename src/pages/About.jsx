@@ -61,14 +61,14 @@ export default function About() {
       <GridItem w="100%" h="100%">
       <Center><Heading mt="10px" >About&nbsp;</Heading><Heading mt="10px" color="#ff0000">{displayedText}</Heading> </Center>
         <Center>
-            <Heading mt="20px" fontSize="2xl"  fontFamily="Montserrat">FOUNDER OF TATVIKA TATTOO</Heading>
-          </Center>
+            <Heading mt="20px" fontSize={["lg","xl","2xl"]}  fontFamily="Montserrat">FOUNDER OF TATVIKA TATTOO</Heading>
+        </Center>
           <Center>
           <Image  src="images/vimall.jpg" alt="founder"  mt="10px" borderRadius="20px" height={["400px","400px"]} width={["300px"]}/>
           </Center>
         
-          <Center><Heading mt="10px"  fontSize="2xl"  fontFamily="Montserrat">MAIN ARTIST</Heading></Center>
-          <Center><Heading mt="10px" mb="20px" fontSize="2xl" color="#ff0000"  fontFamily="Montserrat">VIMALESH</Heading></Center>
+          <Center><Heading mt="10px"  fontSize={["xl","2xl"]}  fontFamily="Montserrat">MAIN ARTIST</Heading></Center>
+          <Center><Heading mt="10px" mb="20px"fontSize={["xl","2xl"]} color="#ff0000"  fontFamily="Montserrat">VIMALESH</Heading></Center>
         </GridItem>
 
         <GridItem w="100%" h="100%">
