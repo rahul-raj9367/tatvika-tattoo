@@ -44,7 +44,7 @@ export default function About() {
               <Heading mt="85px" fontSize="2xl" fontFamily="Montserrat">FOUNDER OF TATVIKA TATTOO</Heading>
             </Center>
             <Center>
-            <Image  src="images/vimal.jpg" alt="founder"  mt="10px" borderRadius="20px" height={["400px","400px"]} width={["300px"]}/>
+            <Image  src="images/vimall.jpg" alt="founder"  mt="10px" borderRadius="20px" height={["400px","400px"]} width={["300px"]}/>
             </Center>
            
             <Center><Heading mt="10px"  fontSize="2xl" fontFamily="Montserrat">MAIN ARTIST</Heading></Center>
