@@ -128,7 +128,7 @@ export default function Footer() {
             <a href="https://wa.me/6382120489"  target="_blank"><BsWhatsapp  size={20} color='white'/></a>
             </List>
             <List mr="15px">
-              <FaFacebook  size={20} color='white'/>
+             <a href="https://www.facebook.com/profile.php?id=100091889060596&mibextid=ZbWKwL" target="_blank"><FaFacebook  size={20} color='white'/></a>
             </List>
           </Center>
         </Box>
