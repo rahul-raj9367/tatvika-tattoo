@@ -1,0 +1,111 @@
+.custom-carousel .control-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  cursor: pointer !important; 
+}
+/* Style for individual dots */
+.custom-carousel .control-dots .dot {
+  background-color: grey; /* Set the default color for inactive dots */
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease; /* Add a transition for smooth color change */
+}
+
+/* Style for the active dot */
+.custom-carousel .control-dots .dot.selected {
+  background-color: black; 
+  cursor: pointer !important; 
+}
+  @media (min-width: 380px) and (max-width: 450px){
+    .rahul {
+      margin-top: 30% !important;
+    }
+  }
+  @media (min-width: 330px) and (max-width: 379px){
+    .rahul {
+      margin-top: 10% !important;
+    }
+    /* .rahul .p {
+      margin-top: 20% !important;
+    } */
+  }
+  @media (min-width: 291px) and (max-width: 310px){
+    .rahul {
+      margin-top: 10% !important;
+    }
+    /* .rahul .p {
+      margin-top: 10% !important;
+    } */
+  }
+  @media (min-width: 311px) and (max-width: 379px){
+    .rahul {
+      margin-top: 15% !important;
+    }
+    /* .rahul .p {
+      margin-top: 10% !important;
+    } */
+  }
+  @media (min-width: 451px) and (max-width: 479px){
+    .rahul {
+      margin-top: 35% !important;
+    }
+  }
+  @media (min-width: 480px) and (max-width: 500px){
+    .rahul {
+      margin-top: 30% !important;
+    }
+  }
+  @media (min-width: 501px) and (max-width: 600px){
+    .rahul {
+      margin-top: 30% !important;
+    }
+  }
+  @media (min-width: 601px) and (max-width: 800px){
+    .rahul {
+      margin-top: 40% !important;
+    }
+  }
+  
+  @media (min-width: 710px) and (max-width: 800px){
+    .rahul {
+      margin-top: 50% !important;
+    }
+  }
+  
+  @media (min-width: 801px) and (max-width: 900px){
+    .rahul {
+      margin-top: 55% !important;
+    }
+  }
+  @media (min-width: 901px) and (max-width: 990px){
+    .rahul {
+      margin-top: 65% !important;
+    }
+  }
+  @media (max-width: 290px){
+    .rahul {
+      margin-top: 0px !important;
+    }
+    .rahul .p {
+      margin-top: 0px !important;
+    }
+  }
+  
+  .carousel .slide img{
+    width: 100%;
+    height: 100%;
+  }
+
+  @font-face {
+    font-family: "montserrat";
+    src: url("fonts/Montserrat-Bold.ttf") format("truetype");
+    font-weight: 800;
+  }
+
+  .nn{
+    font-family: "montserrat" !important;
+  }
+

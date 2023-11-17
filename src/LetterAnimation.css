@@ -1,0 +1,25 @@
+.animated-letter {
+    display: inline-block;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .Footer {
+    max-width: 1900px; 
+    margin: 0 auto; 
+  }
+  .NAV{
+    max-width: 1900px; 
+    margin: 0 auto; 
+  }
+  .welcome{
+    max-width: 1900px; 
+    margin: 0 auto; 
+  }
+
+  
+  
+  
+  
+  
+  
+  
