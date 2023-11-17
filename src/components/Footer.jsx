@@ -59,45 +59,45 @@ export default function Footer() {
                   <Heading as='h1' fontSize="xl" color="white" mb="10px">Hour of Operations</Heading>
                 </ListItem>
                 <ListItem color="white">
-                  <Box display="flex" gap={12}>
+                  <Box display="flex">
                     <Text>Monday :</Text>
-                    <Text>24 hours</Text>
+                    <Text ml="55px">24 hours</Text>
                   </Box>
                 </ListItem>
                 <ListItem color="white">
-                  <Box display="flex" gap={12}>
+                  <Box display="flex" >
                     <Text>Tuesday :</Text>
-                    <Text>24 hours</Text>
+                    <Text ml="55px">24 hours</Text>
                   </Box>
                 </ListItem>
                 <ListItem color="white"> 
-                  <Box display="flex" gap={6}>
+                  <Box display="flex">
                     <Text>Wednesday :</Text>
-                    <Text>24 hours</Text>
+                    <Text ml="31px">24 hours</Text>
                   </Box>
                 </ListItem>
                 <ListItem color="white"> 
-                  <Box display="flex" gap={10}>
+                  <Box display="flex">
                     <Text>Thursday :</Text>
-                    <Text>24 hours</Text>
+                    <Text ml="49px">24 hours</Text>
                   </Box>
                 </ListItem>
                 <ListItem color="white">
-                  <Box display="flex" gap={14}>
+                  <Box display="flex">
                     <Text mr="10px">Friday :</Text>
-                    <Text>24 hours</Text>
+                    <Text ml="61px">24 hours</Text>
                   </Box>
                 </ListItem>
                 <ListItem color="white">
-                  <Box display="flex" gap={12}>
+                  <Box display="flex">
                     <Text>Saturday :</Text>
-                    <Text>24 hours</Text>
+                    <Text ml="51px">24 hours</Text>
                   </Box>
                 </ListItem>
                 <ListItem color="white">
-                <Box display="flex" gap={14}>
+                <Box display="flex">
                     <Text>Sunday :</Text>
-                    <Text>24 hours</Text>
+                    <Text ml="61px">24 hours</Text>
                   </Box>
                 </ListItem>
                 </List>
