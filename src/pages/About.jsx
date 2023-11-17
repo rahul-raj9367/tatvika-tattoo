@@ -33,7 +33,7 @@ export default function About() {
           <GridItem w="100%" h="100%">
             <Center><Heading mt="35px" fontFamily="Montserrat" >About&nbsp;</Heading><Heading mt="35px" color="#ff0000" fontFamily="Montserrat">{displayedText}</Heading> </Center>
             <Center>
-            <Text mt="20px" mb="40px" fontFamily="Montserrat"  ml="30px" width={["500px","500px","500px","500px","550px"]} letterSpacing={["5px"]}  lineHeight={["20px","28px"]}>
+            <Text mt="20px" mb="40px"   ml="30px" width={["500px","500px","500px","500px","550px"]} letterSpacing={["5px"]}  lineHeight={["20px","28px"]}>
             Welcome to Tatvika Tattoo Studio, where ink transforms into artistry under the creative guidance of our founder, Vimalesh. With a deep passion for self-expression through body art, Vimalesh has dedicated years to perfecting the craft of tattooing. Tatvika Tattoo Studio was established with the aim of offering unparalleled artistry, and Vimalesh, as the main artist, brings unparalleled expertise to every design. Our studio is a sanctuary for unique and meaningful tattoos, celebrating the beauty of individuality and storytelling through ink. Step into the world of creativity and craftsmanship at Tatvika Tattoo, where your vision becomes a stunning reality.
             </Text>
             </Center>
@@ -73,7 +73,7 @@ export default function About() {
 
         <GridItem w="100%" h="100%">
           <Center>
-          <Text mb="40px"   fontFamily="Montserrat" width={["90vw","500px","500px","500px","550px"]} lineHeight="28px">
+          <Text mb="40px"    width={["90vw","500px","500px","500px","550px"]} lineHeight="28px">
           Welcome to Tatvika Tattoo Studio, where ink transforms into artistry under the creative guidance of our founder, Vimalesh. With a deep passion for self-expression through body art, Vimalesh has dedicated years to perfecting the craft of tattooing. Tatvika Tattoo Studio was established with the aim of offering unparalleled artistry, and Vimalesh, as the main artist, brings unparalleled expertise to every design. Our studio is a sanctuary for unique and meaningful tattoos, celebrating the beauty of individuality and storytelling through ink. Step into the world of creativity and craftsmanship at Tatvika Tattoo, where your vision becomes a stunning reality.
           </Text>
           </Center>
