@@ -100,7 +100,7 @@ export default function Home() {
       // Hide the success alert after a delay
       setTimeout(() => {
         setShowSuccessAlert(false);
-      }, 2000); // Hide the alert after 5 seconds
+      }, 4000); // Hide the alert after 5 seconds
     }
   }, [isFormSubmitted]);
   
@@ -202,7 +202,7 @@ export default function Home() {
                 
                 <Box>
                 <FormControl isRequired>
-                  <FormLabel htmlFor='name'>Name</FormLabel>
+                  <FormLabel htmlFor='name' fontWeight={400}>Name</FormLabel>
                   <Input
                       variant='filled'
                       type="text"
@@ -216,7 +216,7 @@ export default function Home() {
 
                 <Box>
                 <FormControl isRequired>
-                  <FormLabel htmlFor='email'>Email</FormLabel>
+                  <FormLabel htmlFor='email' fontWeight={400}>Email</FormLabel>
                   <Input
                   variant='filled'
                     type="email"
@@ -231,7 +231,7 @@ export default function Home() {
 
                 <Box>
                 <FormControl isRequired>
-                  <FormLabel>Phone Number</FormLabel>
+                  <FormLabel fontWeight={400}>Phone Number</FormLabel>
                   <Input
                     type="tel" 
                     variant='filled'
@@ -246,7 +246,7 @@ export default function Home() {
               
                 <Box>
                 <FormControl isRequired>
-                <FormLabel>Interested In</FormLabel>
+                <FormLabel fontWeight={400}>Interested In</FormLabel>
                   <Select  placeholder='Interested In'  
                   variant='filled' name="Interested"
                     value={formData.Interested}
@@ -259,7 +259,7 @@ export default function Home() {
 
                 <Box>
                 <FormControl isRequired>
-                <FormLabel> When would you like to get this tattoo?</FormLabel>
+                <FormLabel fontWeight={400}> When would you like to get this tattoo?</FormLabel>
                   <Select
                   
                       placeholder='How soon do you wish to get it done?'
@@ -280,9 +280,7 @@ export default function Home() {
             </DrawerBody>
             
             <DrawerFooter >    
-              <Button colorScheme='red' width={["500px","500px","500px","700px","900px"]}  type="submit" 
-               
-              >Submit</Button>
+              <Button colorScheme='red' width={["500px","500px","500px","700px","900px"]}  type="submit">Submit</Button>
             </DrawerFooter>
          
         </DrawerContent>
