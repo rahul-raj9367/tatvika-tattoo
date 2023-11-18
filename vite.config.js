@@ -9,4 +9,7 @@ export default defineConfig({
     chunkSizeWarningLimit: 500 * 1024,// Set your custom threshold here (500 KB in this example)
     outDir: 'dist', // Check that 'dist' is specified as the output directory 
   },
+  server: {
+    host: '0.0.0.0',
+  },
 })
