@@ -73,7 +73,7 @@ export default function Home() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3002/submit-form", formData);
+      const response = await axios.post("https://mernback-esoz.onrender.com/submit-form", formData);
       console.log("Form submitted successfully:", response.data);
     } catch (error) {
       console.error("Error submitting form:", error);
