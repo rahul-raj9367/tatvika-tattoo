@@ -5,7 +5,7 @@ import { FiInstagram} from 'react-icons/fi';
 import { BsYoutube,BsFillTelephoneFill} from 'react-icons/bs';
 import {  BsWhatsapp} from 'react-icons/bs';
 import { FaFacebook} from 'react-icons/fa';
-import '../style.css'
+import '../Style.css'
 export default function Footer() {
 
   //background
