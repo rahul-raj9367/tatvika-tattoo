@@ -24,7 +24,7 @@ import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
 import { Divider,VStack, IconButton} from '@chakra-ui/react' 
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import '../style.css'
+import '../Style.css'
 import { PhoneIcon} from '@chakra-ui/icons'
 import { Link } from 'react-router-dom';
 

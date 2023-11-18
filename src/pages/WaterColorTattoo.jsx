@@ -2,6 +2,7 @@ import { Box, Grid, GridItem, Text,Center, Card,CardFooter,Button,CardBody,Image
 import React ,{useEffect} from 'react'
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import '../Style.css'
 import { PhoneIcon} from '@chakra-ui/icons'
 import '../LetterAnimation.css'
 
