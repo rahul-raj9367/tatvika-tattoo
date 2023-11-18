@@ -100,7 +100,7 @@ export default function Home() {
       // Hide the success alert after a delay
       setTimeout(() => {
         setShowSuccessAlert(false);
-      }, 4000); // Hide the alert after 5 seconds
+      }, 5000); // Hide the alert after 5 seconds
     }
   }, [isFormSubmitted]);
   
