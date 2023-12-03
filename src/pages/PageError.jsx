@@ -1,6 +1,6 @@
 import { Box,Center,Image,Heading ,Text,Tooltip,Button} from '@chakra-ui/react'
 import React, { useEffect } from 'react';
-
+import { NavLink,Link } from "react-router-dom";
 
 export default function PageError() {
 
@@ -16,7 +16,7 @@ export default function PageError() {
       <Center> <Image  src='images/oops.jpg' alt='404 Page Error' height={["400","500"]} width={["500"]} /></Center>
       <Center><Heading color="black" mt="15px">This page doesn’t exist</Heading></Center>
       <Center><Text mt="15px"  color="#ff0000" as="b">Please check your URL or return to home.</Text></Center>
-      <Center><a href="/"><Button mb="50px" colorScheme='red'  mt="15px">Back To Home</Button></a></Center>
+      <Center><Link to="/"><Button mb="50px" colorScheme='red'  mt="15px">Back To Home</Button></Link></Center>
     </Box>
       
     </Box>

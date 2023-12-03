@@ -187,7 +187,7 @@ export default function Navbar() {
                         </ListItem>
                         </Center>
                         
-                    </List>
+                </List>
 
                 </Flex>
         </Flex>
@@ -306,7 +306,7 @@ export default function Navbar() {
                     value={formData.email}
                     onChange={handleInputChange}
                   />
-                  </FormControl>
+                </FormControl>
                 </Box>
 
                 <Box>
@@ -321,7 +321,7 @@ export default function Navbar() {
                     value={formData.mobileNumber}
                     onChange={handleInputChange}
                   />
-                  </FormControl>
+                </FormControl>
                 </Box>
 
                 {/* <Box>
