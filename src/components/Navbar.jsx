@@ -290,6 +290,7 @@ export default function Navbar() {
                       placeholder='Please enter name'
                       value={formData.name}
                       onChange={handleInputChange}
+                      autoComplete="off"
                   />
                   </FormControl>
                 </Box>
@@ -305,6 +306,7 @@ export default function Navbar() {
                   
                     value={formData.email}
                     onChange={handleInputChange}
+                    autoComplete="off"
                   />
                 </FormControl>
                 </Box>
@@ -320,6 +322,7 @@ export default function Navbar() {
                     name="mobileNumber"
                     value={formData.mobileNumber}
                     onChange={handleInputChange}
+                    autoComplete="off"
                   />
                 </FormControl>
                 </Box>

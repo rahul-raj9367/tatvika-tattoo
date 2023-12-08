@@ -210,6 +210,7 @@ export default function Home() {
                       placeholder='Please enter name'
                       value={formData.name}
                       onChange={handleInputChange}
+                      autoComplete="off"
                   />
                   </FormControl>
                 </Box>
@@ -225,6 +226,7 @@ export default function Home() {
                   
                     value={formData.email}
                     onChange={handleInputChange}
+                    autoComplete="off"
                   />
                   </FormControl>
                 </Box>
@@ -240,6 +242,7 @@ export default function Home() {
                     name="mobileNumber"
                     value={formData.mobileNumber}
                     onChange={handleInputChange}
+                    autoComplete="off"
                   />
                   </FormControl>
                 </Box>
