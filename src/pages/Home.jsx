@@ -27,6 +27,8 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import '../Style.css'
 import { PhoneIcon} from '@chakra-ui/icons'
 import { Link } from 'react-router-dom';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 export default function Home() {
 
@@ -127,6 +129,10 @@ export default function Home() {
     { id: 3, text: "Absolutely thrilled with my script tattoo! The artist's skill in creating intricate lettering surpassed my expectations. The studio's friendly and attentive approach made the experience enjoyable. Highly recommend this studio for their expertise in script tattoos and their fantastic customer service!", author: '~Athinesh Lal,Tirunelveli' },
     // Add more comments as needed
   ];
+
+  useEffect(()=>{
+    Aos.init()
+  },[])
 
   return (
     <Box mt="0px">
@@ -374,9 +380,9 @@ export default function Home() {
       <Box bg="#f5f4f0" >
         <Box>
         <Grid className='welcome' templateColumns={['repeat(1, 1fr)','repeat(1, 1fr)','repeat(2, 1fr)','repeat(2, 1fr)','repeat(4, 1fr)']} gap={6}>
-          <GridItem  mt="50px">
+          <GridItem  mt="50px" >
               <Center>
-              <Card borderRadius="20px">
+              <Card borderRadius="20px" data-aos="fade-down" data-aos-delay="100">
               <CardBody>
                <Link to="/Wolf_Tattoo"><Image src="images/wolf.jpg" alt="wolf_Tattoo" borderRadius="20px" height={["400px","400px"]} width={["300px"]}  transition="transform 0.3s"
         _hover={{ transform: 'scale(1.1)' }}/></Link>
@@ -394,7 +400,7 @@ export default function Home() {
           </GridItem>
           <GridItem mt="50px">
           <Center>
-              <Card borderRadius="20px">
+              <Card borderRadius="20px" data-aos="fade-down" data-aos-delay="100">
               <CardBody>
                 <Link to="/Pheonix_Tattoo"><Image src="images/pheonix.jpg" alt="Pheonix_Tattoo" borderRadius="20px" height="400px" width="300px"  transition="transform 0.3s"
         _hover={{ transform: 'scale(1.1)' }}/></Link>
@@ -411,7 +417,7 @@ export default function Home() {
           </GridItem>
           <GridItem mt="50px">
           <Center>
-              <Card borderRadius="20px">
+              <Card borderRadius="20px" data-aos="fade-down" data-aos-delay="100">
               <CardBody>
               <Link to="/HoneyBee_Tattoo"><Image src="images/honey.jpg" alt="HonyBee_Tattoo" borderRadius="20px" height="400px" width="300px"  transition="transform 0.3s"
         _hover={{ transform: 'scale(1.1)' }}/></Link>
@@ -428,7 +434,7 @@ export default function Home() {
           </GridItem>
           <GridItem mt="50px">
           <Center>
-              <Card borderRadius="20px">
+              <Card borderRadius="20px" data-aos="fade-down" data-aos-delay="100">
               <CardBody>
               <Link to="/Spiritual_Tattoo"><Image src="images/lordshiva.jpg" alt="Lord_Shiva_Tattoo" borderRadius="20px" height="400px" width="300px"  transition="transform 0.3s"
         _hover={{ transform: 'scale(1.1)' }}/></Link>
@@ -451,7 +457,7 @@ export default function Home() {
         <Grid className='welcome' templateColumns={['repeat(1, 1fr)','repeat(1, 1fr)','repeat(2, 1fr)','repeat(2, 1fr)','repeat(4, 1fr)']} gap={6}>
           <GridItem  mt="50px">
               <Center>
-              <Card borderRadius="20px">
+              <Card borderRadius="20px" data-aos="fade-down" data-aos-delay="100">
               <CardBody>
               <Link to="/Flower_Tattoo"><Image src="images/momflower.jpg" alt="Flower_Tattoo" borderRadius="20px" height="400px" width="300px"  transition="transform 0.3s"
         _hover={{ transform: 'scale(1.1)' }}/></Link>
@@ -469,7 +475,7 @@ export default function Home() {
           </GridItem>
           <GridItem mt="50px">
           <Center>
-              <Card borderRadius="20px">
+              <Card borderRadius="20px" data-aos="fade-down" data-aos-delay="100">
               <CardBody>
                 <Link to="/Couples_Tattoo">
                 <Image src="images/couples.jpg" alt="Couples_Tattoo" borderRadius="20px" height="400px" width="300px"  transition="transform 0.3s"
@@ -488,7 +494,7 @@ export default function Home() {
           </GridItem>
           <GridItem mt="50px">
           <Center>
-              <Card borderRadius="20px">
+              <Card borderRadius="20px" data-aos="fade-down" data-aos-delay="100">
               <CardBody>
               <Link to="/LadyBug_Tattoo"><Image src="images/ladybug.jpg" alt="Ladybug_Tattoo" borderRadius="20px" height="400px" width="300px"  transition="transform 0.3s"
         _hover={{ transform: 'scale(1.1)' }}/></Link>
@@ -505,7 +511,7 @@ export default function Home() {
           </GridItem>
           <GridItem mt="50px">
           <Center>
-              <Card borderRadius="20px">
+              <Card borderRadius="20px" data-aos="fade-down" data-aos-delay="100">
               <CardBody>
                 <Link to="/CoverUp_Tattoo"><Image src="images/coverup.jpg" alt="Coverup_Tattoo" borderRadius="20px" height="400px" width="300px"  transition="transform 0.3s"
         _hover={{ transform: 'scale(1.1)' }}/></Link>
@@ -528,7 +534,7 @@ export default function Home() {
         <Grid className='welcome' templateColumns={['repeat(1, 1fr)','repeat(1, 1fr)','repeat(2, 1fr)','repeat(2, 1fr)','repeat(4, 1fr)']} gap={6}>
           <GridItem  mt="50px">
               <Center>
-              <Card borderRadius="20px">
+              <Card borderRadius="20px" data-aos="fade-down" data-aos-delay="100">
               <CardBody>
                 <Link to="/Minimal_Tattoo"><Image src="images/minimaltatto.jpg" alt="Minimal Tattoo" borderRadius="20px" height="400px" width="300px"  transition="transform 0.3s"
         _hover={{ transform: 'scale(1.1)' }}/></Link>
@@ -546,7 +552,7 @@ export default function Home() {
           </GridItem>
           <GridItem mt="50px">
           <Center>
-              <Card borderRadius="20px">
+              <Card borderRadius="20px" data-aos="fade-down" data-aos-delay="100">
               <CardBody>
                 <Link to="/Band_Tattoo"><Image src="images/rahulband.jpg" alt="Band Tattoo" borderRadius="20px" height="400px" width="300px"  transition="transform 0.3s"
         _hover={{ transform: 'scale(1.1)' }}/></Link>
@@ -563,7 +569,7 @@ export default function Home() {
           </GridItem>
           <GridItem mt="50px">
           <Center>
-              <Card borderRadius="20px">
+              <Card borderRadius="20px" data-aos="fade-down" data-aos-delay="100">
               <CardBody>
                 <Link to="/WaterColor_Tattoo"><Image src="images/mom.jpg" alt="Water Colour Tattoo" borderRadius="20px" height="400px" width="300px"  transition="transform 0.3s"
         _hover={{ transform: 'scale(1.1)' }}/></Link>
@@ -580,7 +586,7 @@ export default function Home() {
           </GridItem>
           <GridItem mt="50px" mb="50px">
           <Center>
-              <Card borderRadius="20px">
+              <Card borderRadius="20px" data-aos="fade-down" data-aos-delay="100">
               <CardBody>
                 <Link to="/Script_Tattoo"><Image src="images/athi.jpg" alt="Script Tattoo" borderRadius="20px" height="400px" width="300px"  transition="transform 0.3s"
         _hover={{ transform: 'scale(1.1)' }}/></Link>
