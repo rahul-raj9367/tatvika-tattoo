@@ -53,23 +53,22 @@ export default function Navbar() {
      };
        
      const handleSubmit = async (e) => {
-       e.preventDefault();
-       try {
-         const response = await axios.post("https://mernback-esoz.onrender.com/submit-form", formData);
-         console.log("Form submitted successfully:", response.data);
-       } catch (error) {
-         console.error("Error submitting form:", error);
-       }
-       setFormData(initialFormData);
-       
+      e.preventDefault();
+      try {
+        const response = await axios.post("https://mernback-esoz.onrender.com/submit-form", formData);
+        console.log("Form submitted successfully:", response.data);
+        
+        // If you want to show a success alert after form submission
+        setIsFormSubmitted(true);
+        setShowSuccessAlert(true);
+      } catch (error) {
+        console.error("Error submitting form:", error);
+        // If you want to handle errors, you can set an error state here
+      }
+    };
+    
    
-       setTimeout(() => {
-         setIsFormSubmitted(true);
-         setShowSuccessAlert(true); // Display the success alert
-       }, 1000); // Simulate a 2-second dela
-     };
-   
-   
+     
      //Alert 
      const [showSuccessAlert, setShowSuccessAlert] = useState(false);
      const [isFormSubmitted, setIsFormSubmitted] = useState(false);
