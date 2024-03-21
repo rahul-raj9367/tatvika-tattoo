@@ -74,15 +74,6 @@ export default function Navbar() {
     }
   };
 
-  useEffect(() => {
-    if (isFormSubmitted) {
-      setFormData(initialFormData);
-      setTimeout(() => {
-        setShowSuccessAlert(false);
-      }, 5000);
-    }
-  }, [isFormSubmitted]);
-
 
 
 

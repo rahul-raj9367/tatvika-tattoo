@@ -95,14 +95,6 @@ export default function Home() {
     }
   };
 
-  useEffect(() => {
-    if (isFormSubmitted) {
-      setFormData(initialFormData);
-      setTimeout(() => {
-        setShowSuccessAlert(false);
-      }, 5000);
-    }
-  }, [isFormSubmitted]);
   
 
   //Comments
