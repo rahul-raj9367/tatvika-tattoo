@@ -53,54 +53,54 @@ export default function Home() {
   const displayedText = text.substring(0, currentLetterIndex + 1);
   
   // Drawer
-  const { isOpen, onOpen, onClose } = useDisclosure()
-  const firstField = React.useRef()
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const firstField = React.useRef();
 
-  // Form
   const initialFormData = {
     name: "",
     email: "",
     mobileNumber: "",
     Interested: "",
-    tattoo: "", 
+    tattoo: "",
   };
 
   const [formData, setFormData] = useState(initialFormData);
+  const [showSuccessAlert, setShowSuccessAlert] = useState(false);
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+
+  useEffect(() => {
+    document.title = 'Contact Us';
+  }, []);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-    
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       const response = await axios.post("https://mernback-esoz.onrender.com/submit-form", formData);
       console.log("Form submitted successfully:", response.data);
-      
-      // If you want to show a success alert after form submission
       setIsFormSubmitted(true);
       setShowSuccessAlert(true);
+      setTimeout(() => {
+        setShowSuccessAlert(false);
+      }, 3000);
     } catch (error) {
       console.error("Error submitting form:", error);
-      // If you want to handle errors, you can set an error state here
+    }finally {
+      // Reset form data after submission
+      setFormData(initialFormData);
     }
   };
 
-
-  //Alert 
-  const [showSuccessAlert, setShowSuccessAlert] = useState(false);
-  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-
   useEffect(() => {
     if (isFormSubmitted) {
-      // Reset the form data
       setFormData(initialFormData);
-  
-      // Hide the success alert after a delay
       setTimeout(() => {
         setShowSuccessAlert(false);
-      }, 5000); // Hide the alert after 5 seconds
+      }, 5000);
     }
   }, [isFormSubmitted]);
   
