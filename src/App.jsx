@@ -24,6 +24,7 @@ import Tattoos from "./pages/Tattoos";
 import Piercing from "./pages/Piercing";
 import PageError from "./pages/PageError";
 import Portrait from "./pages/Portrait"
+import Astrological_Tattoo from "./pages/Astrological_Tattoo"
 
 function App() {
   
@@ -54,7 +55,8 @@ function App() {
         <Route path="/Tattoos" element={<Tattoos/>}/>
         <Route path="/Piercing" element={<Piercing/>}/>
         <Route path="/Portrait" element={<Portrait/>}/>
-
+        <Route path="/Astrological_Tattoo" element={<Astrological_Tattoo/>}/>
+        
         <Route path="*" element={<PageError />} />      
       </Routes>
       <Footer />

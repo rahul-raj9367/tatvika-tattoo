@@ -522,7 +522,7 @@ export default function Home() {
               <Center>
               <Card borderRadius="20px" data-aos="fade-down" data-aos-delay="100">
               <CardBody>
-                <Link to="/Minimal_Tattoo"><Image src="images/minimaltatto.jpg" alt="Minimal Tattoo" borderRadius="20px" height="400px" width="300px"  transition="transform 0.3s"
+                <Link to="/Minimal_Tattoo"><Image src="images/min2.jpg"  alt="Minimal Tattoo" borderRadius="20px" height="400px" width="300px"  transition="transform 0.3s"
         _hover={{ transform: 'scale(1.1)' }}/></Link>
                 </CardBody>
                 <Center>
@@ -628,23 +628,23 @@ export default function Home() {
               </Card>
               </Center>
           </GridItem> 
-          {/* <GridItem mt="50px">
+          <GridItem mt="50px">
           <Center>
               <Card borderRadius="20px" data-aos="fade-down" data-aos-delay="100">
               <CardBody>
-                <Link to="/WaterColor_Tattoo"><Image src="images/mom.jpg" alt="Water Colour Tattoo" borderRadius="20px" height="400px" width="300px"  transition="transform 0.3s"
+                <Link to="/Astrological_Tattoo"><Image src="images/cow.jpg" alt="Water Colour Tattoo" borderRadius="20px" height="400px" width="300px"  transition="transform 0.3s"
         _hover={{ transform: 'scale(1.1)' }}/></Link>
                 </CardBody>
                 <Center>
                 <CardFooter >
                   <Center>
-                      <Heading fontSize="lg" fontFamily="Montserrat">Floral  Tattoo</Heading>
+                      <Heading fontSize="lg" fontFamily="Montserrat">Astrological   Tattoo</Heading>
                   </Center>
                 </CardFooter>
                 </Center>
               </Card>
               </Center>
-          </GridItem> */}
+          </GridItem>
           {/* <GridItem mt="50px" mb="50px">
           <Center>
               <Card borderRadius="20px" data-aos="fade-down" data-aos-delay="100">
