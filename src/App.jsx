@@ -23,6 +23,7 @@ import Faq from "./pages/Faq";
 import Tattoos from "./pages/Tattoos";
 import Piercing from "./pages/Piercing";
 import PageError from "./pages/PageError";
+import Portrait from "./pages/Portrait"
 
 function App() {
   
@@ -38,7 +39,7 @@ function App() {
         <Route path="/Pheonix_Tattoo" element={<PheonixTattoo/>}/>
         <Route path="/HoneyBee_Tattoo" element={<HoneyBeeTattoo/>}/>
         <Route path="/Spiritual_Tattoo" element={<SpiritualTattoo/>}/>
-        <Route path="/Flower_Tattoo" element={<Flower/>}/>
+        <Route path="/Floral_Tattoo" element={<Flower/>}/>
         <Route path="/Couples_Tattoo" element={<CouplesTattoo/>}/>
         <Route path="/LadyBug_Tattoo" element={<LadyBugTattoo/>}/>
         <Route path="/CoverUp_Tattoo" element={<CoverupTattoo/>}/>
@@ -52,6 +53,8 @@ function App() {
         <Route path="/Service" element={<Service/>}/>
         <Route path="/Tattoos" element={<Tattoos/>}/>
         <Route path="/Piercing" element={<Piercing/>}/>
+        <Route path="/Portrait" element={<Portrait/>}/>
+
         <Route path="*" element={<PageError />} />      
       </Routes>
       <Footer />

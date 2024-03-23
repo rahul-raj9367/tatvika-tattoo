@@ -68,10 +68,6 @@ export default function Home() {
   const [showSuccessAlert, setShowSuccessAlert] = useState(false);
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
-  useEffect(() => {
-    document.title = 'Contact Us';
-  }, []);
-
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -449,13 +445,13 @@ export default function Home() {
               <Center>
               <Card borderRadius="20px" data-aos="fade-down" data-aos-delay="100">
               <CardBody>
-              <Link to="/Flower_Tattoo"><Image src="images/momflower.jpg" alt="Flower_Tattoo" borderRadius="20px" height="400px" width="300px"  transition="transform 0.3s"
+              <Link to="/Floral_Tattoo"><Image src="images/momflowernew.jpg" alt="Flower_Tattoo" borderRadius="20px" height="400px" width="300px"  transition="transform 0.3s"
         _hover={{ transform: 'scale(1.1)' }}/></Link>
                 </CardBody>
                 <Center>
                 <CardFooter >
                   <Center>
-                      <Heading fontSize="lg" fontFamily="Montserrat">Flower Tattoo</Heading>
+                      <Heading fontSize="lg" fontFamily="Montserrat">Floral  Tattoo</Heading>
                   </Center>
                 </CardFooter>
                 </Center>
@@ -503,13 +499,13 @@ export default function Home() {
           <Center>
               <Card borderRadius="20px" data-aos="fade-down" data-aos-delay="100">
               <CardBody>
-                <Link to="/CoverUp_Tattoo"><Image src="images/coverup.jpg" alt="Coverup_Tattoo" borderRadius="20px" height="400px" width="300px"  transition="transform 0.3s"
+                <Link to="/Portrait"><Image src="images/Portrait.jpg" alt="Band Tattoo" borderRadius="20px" height="400px" width="300px"  transition="transform 0.3s"
         _hover={{ transform: 'scale(1.1)' }}/></Link>
                 </CardBody>
                 <Center>
                 <CardFooter >
                   <Center>
-                      <Heading fontSize="lg" fontFamily="Montserrat">Coverup Tattoo</Heading>
+                      <Heading fontSize="lg" fontFamily="Montserrat">Portrait  Tattoo</Heading>
                   </Center>
                 </CardFooter>
                 </Center>
@@ -591,6 +587,81 @@ export default function Home() {
               </Card>
               </Center>
           </GridItem>
+        </Grid>
+        </Box>
+
+
+        <Box>
+        <Grid className='welcome' templateColumns={['repeat(1, 1fr)','repeat(1, 1fr)','repeat(2, 1fr)','repeat(2, 1fr)','repeat(4, 1fr)']} gap={6}>
+          {/* <GridItem  mt="50px">
+              <Center>
+              <Card borderRadius="20px" data-aos="fade-down" data-aos-delay="100">
+              <CardBody>
+                <Link to="/Minimal_Tattoo"><Image src="images/minimaltatto.jpg" alt="Minimal Tattoo" borderRadius="20px" height="400px" width="300px"  transition="transform 0.3s"
+        _hover={{ transform: 'scale(1.1)' }}/></Link>
+                </CardBody>
+                <Center>
+                <CardFooter >
+                  <Center>
+                      <Heading fontSize="lg" fontFamily="Montserrat">Minimal Tattoo</Heading>
+                  </Center>
+                </CardFooter>
+                </Center>
+              </Card>
+              </Center>
+           
+          </GridItem> */}
+           <GridItem mt="50px">
+          <Center>
+              <Card borderRadius="20px" data-aos="fade-down" data-aos-delay="100">
+              <CardBody>
+                <Link to="/CoverUp_Tattoo"><Image src="images/coverup.jpg" alt="Coverup_Tattoo" borderRadius="20px" height="400px" width="300px"  transition="transform 0.3s"
+        _hover={{ transform: 'scale(1.1)' }}/></Link>
+                </CardBody>
+                <Center>
+                <CardFooter >
+                  <Center>
+                      <Heading fontSize="lg" fontFamily="Montserrat">Coverup Tattoo</Heading>
+                  </Center>
+                </CardFooter>
+                </Center>
+              </Card>
+              </Center>
+          </GridItem> 
+          {/* <GridItem mt="50px">
+          <Center>
+              <Card borderRadius="20px" data-aos="fade-down" data-aos-delay="100">
+              <CardBody>
+                <Link to="/WaterColor_Tattoo"><Image src="images/mom.jpg" alt="Water Colour Tattoo" borderRadius="20px" height="400px" width="300px"  transition="transform 0.3s"
+        _hover={{ transform: 'scale(1.1)' }}/></Link>
+                </CardBody>
+                <Center>
+                <CardFooter >
+                  <Center>
+                      <Heading fontSize="lg" fontFamily="Montserrat">Floral  Tattoo</Heading>
+                  </Center>
+                </CardFooter>
+                </Center>
+              </Card>
+              </Center>
+          </GridItem> */}
+          {/* <GridItem mt="50px" mb="50px">
+          <Center>
+              <Card borderRadius="20px" data-aos="fade-down" data-aos-delay="100">
+              <CardBody>
+                <Link to="/Script_Tattoo"><Image src="images/athi.jpg" alt="Script Tattoo" borderRadius="20px" height="400px" width="300px"  transition="transform 0.3s"
+        _hover={{ transform: 'scale(1.1)' }}/></Link>
+                </CardBody>
+                <Center>
+                <CardFooter >
+                  <Center>
+                      <Heading fontSize="lg" fontFamily="Montserrat">Script Tattoo</Heading>
+                  </Center>
+                </CardFooter>
+                </Center>
+              </Card>
+              </Center>
+          </GridItem> */}
         </Grid>
         </Box>
       </Box>

@@ -5,14 +5,21 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import '../Style.css'
 import { PhoneIcon} from '@chakra-ui/icons'
 import '../LetterAnimation.css'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+
 
 export default function SpiritualTattoo() {
     useEffect(() => {
         document.title = 'Spiritual - Tatvika Tattoo';
       }, []);
+
+      useEffect(()=>{
+        Aos.init()
+      },[])
       return (
       
-        <Box pt="100px" bg="#f5f4f0" pb="205px">
+        <Box pt="100px" bg="#f5f4f0" >
           <Box>
             {/* Grid 1 */}
             <Grid className='welcome' display={["none","none","none","flex","flex"]} templateColumns={['repeat(1, 1fr)','repeat(1, 1fr)','repeat(1, 1fr)','repeat(2, 1fr)','repeat(2, 1fr)']}>
@@ -98,23 +105,23 @@ export default function SpiritualTattoo() {
             </Grid>
 
         {/* Related Work */}
-            <Box bg="white" mt="100px" mb="100px">
+            <Box bg="white" mt="100px">
               {/* <Center>
                 <Heading>Related Works</Heading>
               </Center> */}
               <Box pt="50px" pb="50px">
               <Center>
                 <Grid templateColumns={['repeat(1, 1fr)','repeat(1, 1fr)','repeat(1, 1fr)','repeat(3, 1fr)']} gap={20}>
-                  <GridItem w="100%" h="100%">
+                  <GridItem w="100%" h="100%" data-aos="fade-down" data-aos-delay="100">
                   <Image src='images/ohm.jpg' alt='tattoo' borderRadius="20px" height={["400px","400px"]} width={["300px"]}/>
                   </GridItem>
 
-                  <GridItem w="100%" h="100%">
+                  <GridItem w="100%" h="100%" data-aos="fade-down" data-aos-delay="100">
                   <Image src='images/vel.jpg' alt='tattoo' borderRadius="20px" height={["400px","400px"]} width={["300px"]}/>
                   </GridItem>
 
-                  <GridItem w="100%" h="100%">
-                  {/* <Image src='images/band.jpg' alt='band_tattoo' borderRadius="20px" height={["400px","400px"]} width={["300px"]}/> */}
+                  <GridItem w="100%" h="100%" data-aos="fade-down" data-aos-delay="100">
+                  <Image src='images/l3.jpg' alt='band_tattoo' borderRadius="20px" height={["400px","400px"]} width={["300px"]}/>
                   </GridItem>
                 </Grid>
               </Center>

@@ -6,10 +6,9 @@ import '../Style.css'
 import { PhoneIcon} from '@chakra-ui/icons'
 import '../LetterAnimation.css'
 
-export default function Flower() {
-
+export default function Portrait() {
     useEffect(() => {
-        document.title = 'Floral  Tattoo - Tatvika Tattoo';
+        document.title = 'Portrait Tattoo - Tatvika Tattoo';
       }, []);
       return (
       
@@ -20,7 +19,10 @@ export default function Flower() {
               <GridItem w="100%" h="100%"  >
               <Center>
                   <Text width={["90vw","90vw","300px","450px","650px"]} mt={["25px","25px","20px","10px","80px"]} lineHeight="28px" ml={["5px","60px","60px","60px","120px"]} letterSpacing="3px">
-A black and grey flower tattoo is an exquisite and timeless choice for girls seeking a delicate yet captivating piece of body art. This monochromatic design blends intricate shading and detail to create a beautiful, realistic flower, allowing its natural elegance to shine. Black and grey ink imbues the tattoo with a sense of sophistication and subtlety, making it a versatile choice for various placements, from wrists to shoulders, while symbolizing femininity, growth, and the ever-present beauty of life's blooms. It's a graceful and enduring tribute to the unique beauty found in simplicity.
+                  A portrait tattoo is a deeply personal homage captured in ink, where imagery transforms into a narrative of its own. This distinctive form of body art allows one to immortalize loved ones, revered figures, or cherished memories upon their skin, often depicted in stunning detail and artistry. Each stroke of the tattoo artist's needle carries with it a profound meaning, encapsulating the essence of a person or moment in time.
+
+Portraiture tattoos encapsulate the very essence of relationships, passions, or experiences that hold significance in one's life, serving as a timeless tribute to what truly matters. Whether rendered in hyper-realistic detail or with a minimalist touch, these tattoos forge an enduring connection to the subject, offering a constant reminder of their presence and impact.
+
                   </Text>
                 </Center>
                 <Center>
@@ -36,15 +38,15 @@ A black and grey flower tattoo is an exquisite and timeless choice for girls see
                 <Box height={["400px","500px"]} width={["100vw","400px"]}>
                   <Carousel autoPlay showArrows showStatus={false} showThumbs infiniteLoop className="custom-carousel" interval={2000}>
                     <Box >
-                        <Image src="images/momflowernew.jpg"  alt="wolf_Tattoo" borderRadius="20px"/>
+                        <Image src="images/Portrait.jpg"   alt="wolf_Tattoo" borderRadius="20px"/>
                     </Box>
                     <Box >
                     <Box >
-                        <Image src="images/momflowernew.jpg"  alt="wolf_Tattoo" borderRadius="20px"/>
+                        <Image src="images/Portrait.jpg"  alt="wolf_Tattoo" borderRadius="20px"/>
                     </Box>
                     </Box>
                     <Box >
-                        <Image src="images/momflowernew.jpg"   alt="wolf_Tattoo" borderRadius="20px"/>
+                        <Image src="images/Portrait.jpg"   alt="wolf_Tattoo" borderRadius="20px"/>
                     </Box>
                   </Carousel>
                   </Box>
@@ -62,16 +64,16 @@ A black and grey flower tattoo is an exquisite and timeless choice for girls see
                     <Carousel autoPlay showArrows showStatus={false} showThumbs infiniteLoop className="custom-carousel" interval={2000} >
                       <Box>
                         <Center>
-                        <Image src="images/momflowernew.jpg"   alt="wolf_Tattoo" borderRadius="20px"/>
+                        <Image src="images/Portrait.jpg"   alt="wolf_Tattoo" borderRadius="20px"/>
                         </Center>
                       </Box>
                       <Box >
                       <Box >
-                          <Image src="images/momflowernew.jpg"   alt="wolf_Tattoo" borderRadius="20px"/>
+                          <Image src="images/Portrait.jpg"  alt="wolf_Tattoo" borderRadius="20px"/>
                       </Box>
                       </Box>
                       <Box >
-                          <Image src="images/momflowernew.jpg"  alt="wolf_Tattoo" borderRadius="20px"/>
+                          <Image src="images/Portrait.jpg"   alt="wolf_Tattoo" borderRadius="20px"/>
                       </Box>
                     </Carousel>
                     </Box>
@@ -83,8 +85,10 @@ A black and grey flower tattoo is an exquisite and timeless choice for girls see
                 <Center>
                   <Box mt={["","","300px"]} className='rahul'>
                   <Text width={["90vw","90vw","90vw"]}  lineHeight="28px" ml={["10px","10px","10px",]} letterSpacing="3px" className='p'>
-                  A black and grey flower tattoo is an exquisite and timeless choice for girls seeking a delicate yet captivating piece of body art. This monochromatic design blends intricate shading and detail to create a beautiful, realistic flower, allowing its natural elegance to shine. Black and grey ink imbues the tattoo with a sense of sophistication and subtlety, making it a versatile choice for various placements, from wrists to shoulders, while symbolizing femininity, growth, and the ever-present beauty of life's blooms. It's a graceful and enduring tribute to the unique beauty found in simplicity.
-                    </Text>
+
+                  A portrait tattoo is a deeply personal homage captured in ink, where imagery transforms into a narrative of its own. This distinctive form of body art allows one to immortalize loved ones, revered figures, or cherished memories upon their skin, often depicted in stunning detail and artistry. Each stroke of the tattoo artist's needle carries with it a profound meaning, encapsulating the essence of a person or moment in time.
+
+Portraiture tattoos encapsulate the very essence of relationships, passions, or experiences that hold significance in one's life, serving as a timeless tribute to what truly matters. Whether rendered in hyper-realistic detail or with a minimalist touch, these tattoos forge an enduring connection to the subject, offering a constant reminder of their presence and impact.                    </Text>
                   </Box>
                   </Center>
                   <Center>
@@ -98,6 +102,5 @@ A black and grey flower tattoo is an exquisite and timeless choice for girls see
               
             </Grid>
         </Box>
-      
   )
 }
