@@ -25,6 +25,7 @@ import {
   AlertDescription,
 } from '@chakra-ui/react'
 import axios from "axios";
+import emailjs from '@emailjs/browser';
 import '../Style.css'
 
 
@@ -35,48 +36,86 @@ export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const firstField = React.useRef();
 
-  const initialFormData = {
-    name: "",
-    email: "",
-    mobileNumber: "",
-    Interested: "",
-    tattoo: "",
-  };
+  // const initialFormData = {
+  //   name: "",
+  //   email: "",
+  //   mobileNumber: "",
+  //   Interested: "",
+  //   tattoo: "",
+  // };
 
-  const [formData, setFormData] = useState(initialFormData);
+  // const [formData, setFormData] = useState(initialFormData);
+  // const [showSuccessAlert, setShowSuccessAlert] = useState(false);
+  // const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+
+  // useEffect(() => {
+  //   document.title = 'Contact Us';
+  // }, []);
+
+  // const handleInputChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData({ ...formData, [name]: value });
+  // };
+
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   try {
+  //     const response = await axios.post("https://mernback-esoz.onrender.com/submit-form", formData);
+  //     console.log("Form submitted successfully:", response.data);
+  //     setIsFormSubmitted(true);
+  //     setShowSuccessAlert(true);
+  //     setTimeout(() => {
+  //       setShowSuccessAlert(false);
+  //     }, 3000);
+  //   } catch (error) {
+  //     console.error("Error submitting form:", error);
+  //   }finally {
+  //     // Reset form data after submission  const [name,setName]=useState('');
+   //     setFormData(initialFormData);
+  //   }
+  // };
+  const [name,setName]= useState('')
+  const [email,setEmail]=useState('');
+  const [mobileNumber,setmobileNumber]=useState('');
+  const [interested,SetInterested]=useState('')
+  const [tattoo,settattoo]=useState('');
+
   const [showSuccessAlert, setShowSuccessAlert] = useState(false);
-  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-
-  useEffect(() => {
-    document.title = 'Contact Us';
-  }, []);
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) =>{
     e.preventDefault();
-    try {
-      const response = await axios.post("https://mernback-esoz.onrender.com/submit-form", formData);
-      console.log("Form submitted successfully:", response.data);
-      setIsFormSubmitted(true);
-      setShowSuccessAlert(true);
+    
+    const serviceId ="service_dn3zrik";
+    const templateId="template_sbeq14j";
+    const publicKey="C8AD15DEHXcObL8sC";
+
+    const templateParams ={
+      name: name,
+      email: email,
+      phone: mobileNumber,
+      interested: interested,
+      to_name: 'Vimal',
+      tattoo :tattoo,
+    };
+  
+    emailjs.send(serviceId,templateId,templateParams,publicKey)
+    .then((response)=>{
+        console.log('Email send Successfully',response);
+        setName('');
+        setEmail('');
+        setPhone('');
+        SetInterested('')
+        settattoo(''); 
+        
+        setShowSuccessAlert(true);
       setTimeout(() => {
         setShowSuccessAlert(false);
       }, 3000);
-    } catch (error) {
-      console.error("Error submitting form:", error);
-    }finally {
-      // Reset form data after submission
-      setFormData(initialFormData);
-    }
-  };
-
-
-
-
+    })
+    .catch((error)=>{
+      console.log('Error sending email:',error);
+    });
+  }
+ 
   return (
     <Box>
     <Box as="div"  position={["fixed"]}  bg="white" width="100vw" top="0" left="0" alignItems="center"  justifyContent="center" zIndex={99} >
@@ -276,8 +315,8 @@ export default function Navbar() {
                       type="text"
                       name="name"
                       placeholder='Please enter name'
-                      value={formData.name}
-                      onChange={handleInputChange}
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
                       autoComplete="off"
                   />
                   </FormControl>
@@ -292,8 +331,8 @@ export default function Navbar() {
                     name="email"
                     placeholder='Please enter email'
                   
-                    value={formData.email}
-                    onChange={handleInputChange}
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     autoComplete="off"
                   />
                 </FormControl>
@@ -308,8 +347,8 @@ export default function Navbar() {
                     
                     placeholder='Please enter Number'
                     name="mobileNumber"
-                    value={formData.mobileNumber}
-                    onChange={handleInputChange}
+                    value={mobileNumber}
+                    onChange={(e) => setmobileNumber(e.target.value)}
                     autoComplete="off"
                   />
                 </FormControl>
@@ -324,8 +363,8 @@ export default function Navbar() {
                     
                     placeholder='Please enter location'
                     name="mobileNumber"
-                    value={formData.mobileNumber}
-                    onChange={handleInputChange}
+                    value={mobileNumber}
+                    onChange={(e) => setmobileNumber(e.target.value)}
                   />
                   </FormControl>
                 </Box>
@@ -339,8 +378,8 @@ export default function Navbar() {
                     
                     placeholder='Please enter size'
                     name="mobileNumber"
-                    value={formData.mobileNumber}
-                    onChange={handleInputChange}
+                    value={mobileNumber}
+                    onChange={(e) => setmobileNumber(e.target.value)}
                   />
                   </FormControl>
                 </Box> */}
@@ -350,8 +389,8 @@ export default function Navbar() {
                 <FormLabel fontWeight={400}>Interested In</FormLabel>
                   <Select  placeholder='Interested In'  
                   variant='filled' name="Interested"
-                    value={formData.Interested}
-                      onChange={handleInputChange}>
+                    value={interested}
+                    onChange={(e) => SetInterested(e.target.value)} >
                     <option value='Tattoo'>Tattoo</option>
                     <option value='Piercing'>Piercing</option>
                   </Select>
@@ -360,14 +399,14 @@ export default function Navbar() {
 
                 <Box>
                 <FormControl isRequired>
-                <FormLabel fontWeight={400}> When would you like to get this tattoo?</FormLabel>
+                <FormLabel fontWeight={400}> When would you like to get this {interested}?</FormLabel>
                   <Select
                   
                       placeholder='How soon do you wish to get it done?'
                       name="tattoo"  
                       variant='filled'
-                      value={formData.tattoo}
-                      onChange={handleInputChange}
+                      value={tattoo}
+                      onChange={(e) => settattoo(e.target.value)} 
                     >
                       <option value='This Week'>This Week</option>
                       <option value='Within a Month'>Within a Month</option>
