@@ -109,7 +109,7 @@ export default function Navbar() {
         setShowSuccessAlert(true);
       setTimeout(() => {
         setShowSuccessAlert(false);
-      },100);
+      },3000);
     })
     .catch((error)=>{
       console.log('Error sending email:',error);
