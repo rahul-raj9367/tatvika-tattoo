@@ -102,7 +102,7 @@ export default function Navbar() {
         console.log('Email send Successfully',response);
         setName('');
         setEmail('');
-        setPhone('');
+        setmobileNumber('');
         SetInterested('')
         settattoo(''); 
         
