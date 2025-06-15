@@ -12,19 +12,19 @@ export default function LadyBugTattoo() {
       }, []);
       return (
       
-        <Box pt="100px" bg="#f5f4f0" pb="205px">
+        <Box pt="100px" bg="#333333" pb="205px">
           <Box>
             {/* Grid 1 */}
             <Grid className="welcome" display={["none","none","none","flex","flex"]} templateColumns={['repeat(1, 1fr)','repeat(1, 1fr)','repeat(1, 1fr)','repeat(2, 1fr)','repeat(2, 1fr)']}>
               <GridItem w="100%" h="100%"  >
               <Center>
-                  <Text width={["90vw","90vw","300px","450px","650px"]} mt={["25px","25px","20px","10px","80px"]} lineHeight="28px" ml={["5px","60px","60px","60px","120px"]} letterSpacing="3px">
+                  <Text color="white" width={["90vw","90vw","300px","450px","650px"]} textAlign="justify"  mt={["25px","25px","20px","10px","80px"]} lineHeight="28px" ml={["5px","60px","60px","60px","120px"]} letterSpacing="3px">
                   A ladybug tattoo is a charming and symbolic choice, embodying good luck, love, and protection. These tiny, vibrant insects are often associated with positive omens and joy. The ladybug's distinctive red hue adorned with black spots adds a touch of whimsy to any design, making it a delightful choice for those seeking a small yet meaningful tattoo. This inked ladybug can serve as a constant reminder of the beauty in life's little moments and the belief in serendipity. It's a miniature masterpiece that carries with it a world of positivity and a touch of nature's magic.
                   </Text>
                 </Center>
                 <Center>
                 <Box mt="30px">
-              <Button colorScheme='red' leftIcon={<PhoneIcon />}><a href="tel:+916382120489" cursor="pointer">Free Consultation</a></Button>
+              <Button bg='#6ae0e9'   _hover={{ bg: "#1be4ec" }} leftIcon={<PhoneIcon />}><a href="tel:+916382120489" cursor="pointer">Free Consultation</a></Button>
     
               </Box>
                 </Center>
@@ -81,14 +81,14 @@ export default function LadyBugTattoo() {
               <GridItem w="100%" h="100%">
                 <Center>
                   <Box mt={["","","300px"]} className='rahul'>
-                  <Text width={["90vw","90vw","90vw"]}  lineHeight="28px" ml={["10px","10px","10px",]} letterSpacing="3px" className='p'>
+                  <Text color="white" width={["90vw","90vw","90vw"]} textAlign="justify" lineHeight="28px" ml={["10px","10px","10px",]} letterSpacing="3px" className='p'>
 
                   A ladybug tattoo is a charming and symbolic choice, embodying good luck, love, and protection. These tiny, vibrant insects are often associated with positive omens and joy. The ladybug's distinctive red hue adorned with black spots adds a touch of whimsy to any design, making it a delightful choice for those seeking a small yet meaningful tattoo. This inked ladybug can serve as a constant reminder of the beauty in life's little moments and the belief in serendipity. It's a miniature masterpiece that carries with it a world of positivity and a touch of nature's magic.                    </Text>
                   </Box>
                   </Center>
                   <Center>
                 <Box mt="30px">
-              <Button colorScheme='red' leftIcon={<PhoneIcon />}><a href="tel:+916382120489" cursor="pointer">Free Consultation</a></Button>
+              <Button bg='#6ae0e9'   _hover={{ bg: "#1be4ec" }} leftIcon={<PhoneIcon />}><a href="tel:+916382120489" cursor="pointer">Free Consultation</a></Button>
     
               </Box>
                 </Center>

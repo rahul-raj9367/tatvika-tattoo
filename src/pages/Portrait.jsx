@@ -12,13 +12,13 @@ export default function Portrait() {
       }, []);
       return (
       
-        <Box pt="100px" bg="#f5f4f0" pb="205px">
+        <Box pt="100px" bg="#333333" pb="205px">
           <Box>
             {/* Grid 1 */}
             <Grid className='welcome' display={["none","none","none","flex","flex"]} templateColumns={['repeat(1, 1fr)','repeat(1, 1fr)','repeat(1, 1fr)','repeat(2, 1fr)','repeat(2, 1fr)']}>
               <GridItem w="100%" h="100%"  >
               <Center>
-                  <Text width={["90vw","90vw","300px","450px","650px"]} mt={["25px","25px","20px","10px","80px"]} lineHeight="28px" ml={["5px","60px","60px","60px","120px"]} letterSpacing="3px">
+                  <Text color="white" width={["90vw","90vw","300px","450px","650px"]} textAlign="justify" mt={["25px","25px","20px","10px","80px"]} lineHeight="28px" ml={["5px","60px","60px","60px","120px"]} letterSpacing="3px">
                   A portrait tattoo is a deeply personal homage captured in ink, where imagery transforms into a narrative of its own. This distinctive form of body art allows one to immortalize loved ones, revered figures, or cherished memories upon their skin, often depicted in stunning detail and artistry. Each stroke of the tattoo artist's needle carries with it a profound meaning, encapsulating the essence of a person or moment in time.
 
 Portraiture tattoos encapsulate the very essence of relationships, passions, or experiences that hold significance in one's life, serving as a timeless tribute to what truly matters. Whether rendered in hyper-realistic detail or with a minimalist touch, these tattoos forge an enduring connection to the subject, offering a constant reminder of their presence and impact.
@@ -27,7 +27,7 @@ Portraiture tattoos encapsulate the very essence of relationships, passions, or 
                 </Center>
                 <Center>
                 <Box mt="30px">
-              <Button colorScheme='red' leftIcon={<PhoneIcon />}><a href="tel:+916382120489" cursor="pointer">Free Consultation</a></Button>
+              <Button bg='#6ae0e9'   _hover={{ bg: "#1be4ec" }} leftIcon={<PhoneIcon />}><a href="tel:+916382120489" cursor="pointer">Free Consultation</a></Button>
     
               </Box>
                 </Center>
@@ -84,7 +84,7 @@ Portraiture tattoos encapsulate the very essence of relationships, passions, or 
               <GridItem w="100%" h="100%">
                 <Center>
                   <Box mt={["","","300px"]} className='rahul'>
-                  <Text width={["90vw","90vw","90vw"]}  lineHeight="28px" ml={["10px","10px","10px",]} letterSpacing="3px" className='p'>
+                  <Text color="white" width={["90vw","90vw","90vw"]} textAlign="justify"  lineHeight="28px" ml={["10px","10px","10px",]} letterSpacing="3px" className='p'>
 
                   A portrait tattoo is a deeply personal homage captured in ink, where imagery transforms into a narrative of its own. This distinctive form of body art allows one to immortalize loved ones, revered figures, or cherished memories upon their skin, often depicted in stunning detail and artistry. Each stroke of the tattoo artist's needle carries with it a profound meaning, encapsulating the essence of a person or moment in time.
 
@@ -93,7 +93,7 @@ Portraiture tattoos encapsulate the very essence of relationships, passions, or 
                   </Center>
                   <Center>
                 <Box mt="30px">
-              <Button colorScheme='red' leftIcon={<PhoneIcon />}><a href="tel:+916382120489" cursor="pointer">Free Consultation</a></Button>
+              <Button bg='#6ae0e9'   _hover={{ bg: "#1be4ec" }} leftIcon={<PhoneIcon />}><a href="tel:+916382120489" cursor="pointer">Free Consultation</a></Button>
     
               </Box>
                 </Center>

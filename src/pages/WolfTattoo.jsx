@@ -21,19 +21,19 @@ export default function Wolf_Tattoo() {
 
   return (
   
-    <Box pt="100px" bg="#f5f4f0" >
+    <Box pt="100px" bg="#333333" >
       <Box>
         {/* Grid 1 */}
         <Grid display={["none","none","none","flex","flex"]} className='welcome' templateColumns={['repeat(1, 1fr)','repeat(1, 1fr)','repeat(1, 1fr)','repeat(2, 1fr)','repeat(2, 1fr)']}>
           <GridItem w="100%" h="100%"  >
           <Center>
-              <Text width={["90vw","90vw","300px","450px","650px"]} mt={["25px","25px","20px","10px","80px"]} lineHeight="28px" ml={["5px","60px","60px","60px","120px"]} letterSpacing="3px">
+              <Text color="white" width={["90vw","90vw","300px","450px","650px"]} textAlign="justify" mt={["25px","25px","20px","10px","80px"]} lineHeight="28px" ml={["5px","60px","60px","60px","120px"]} letterSpacing="3px">
               A wolf tattoo is more than just body art; it's a symbol of deep meaning and significance. Wolves are often associated with traits such as strength, resilience, intelligence, and a strong sense of family and community. A wolf tattoo represents the wild spirit within, a connection to nature, and a reminder of the power that lies within us. Whether you choose a realistic wolf tattoo, a tribal design, or a more abstract representation, it can be a powerful emblem of your own inner strength and the importance of unity, loyalty, and individuality. The versatility of wolf tattoos allows for a wide range of interpretations, making it a meaningful choice for those looking to express their unique personality and values through body art.              
               </Text>
             </Center>
             <Center>
             <Box mt="30px">
-          <Button colorScheme='red' leftIcon={<PhoneIcon />}><a href="tel:+916382120489" cursor="pointer">Free Consultation</a></Button>
+          <Button bg='#6ae0e9'   _hover={{ bg: "#1be4ec" }} leftIcon={<PhoneIcon />}><a href="tel:+916382120489" cursor="pointer">Free Consultation</a></Button>
 
           </Box>
             </Center>
@@ -90,14 +90,14 @@ export default function Wolf_Tattoo() {
           <GridItem w="100%" h="100%">
             <Center>
               <Box mt={["","","300px"]} className='rahul'>
-              <Text width={["90vw","90vw","90vw"]}  lineHeight="28px" ml={["10px","10px","10px",]} letterSpacing="3px" className='p'>
+              <Text color="white" width={["90vw","90vw","90vw"]} textAlign="justify" lineHeight="28px" ml={["10px","10px","10px",]} letterSpacing="3px" className='p'>
               A wolf tattoo is more than just body art; it's a symbol of deep meaning and significance. Wolves are often associated with traits such as strength, resilience, intelligence, and a strong sense of family and community. A wolf tattoo represents the wild spirit within, a connection to nature, and a reminder of the power that lies within us. Whether you choose a realistic wolf tattoo, a tribal design, or a more abstract representation, it can be a powerful emblem of your own inner strength and the importance of unity, loyalty, and individuality. The versatility of wolf tattoos allows for a wide range of interpretations, making it a meaningful choice for those looking to express their unique personality and values through body art.              
                 </Text>
               </Box>
               </Center>
               <Center>
             <Box mt="30px">
-          <Button colorScheme='red' leftIcon={<PhoneIcon />}><a href="tel:+916382120489" cursor="pointer">Free Consultation</a></Button>
+          <Button bg='#6ae0e9'   _hover={{ bg: "#1be4ec" }} leftIcon={<PhoneIcon />}><a href="tel:+916382120489" cursor="pointer">Free Consultation</a></Button>
 
           </Box>
             </Center>

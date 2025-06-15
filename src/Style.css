@@ -100,12 +100,12 @@
   }
 
   @font-face {
-    font-family: "montserrat";
+    font-family: "Montserrat";
     src: url("fonts/Montserrat-Bold.ttf") format("truetype");
     font-weight: 800;
   }
 
   .nn{
-    font-family: "montserrat" !important;
+    font-family: "Montserrat" !important;
   }
 

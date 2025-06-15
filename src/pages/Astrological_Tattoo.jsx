@@ -12,13 +12,13 @@ export default function Astrological_Tattoo() {
       }, []);
       return (
       
-        <Box pt="100px" bg="#f5f4f0" pb="205px">
+        <Box pt="100px" bg="#333333" pb="205px">
           <Box>
             {/* Grid 1 */}
             <Grid className='welcome' display={["none","none","none","flex","flex"]} templateColumns={['repeat(1, 1fr)','repeat(1, 1fr)','repeat(1, 1fr)','repeat(2, 1fr)','repeat(2, 1fr)']}>
               <GridItem w="100%" h="100%"  >
               <Center>
-                  <Text width={["90vw","90vw","300px","450px","650px"]} mt={["25px","25px","20px","10px","80px"]} lineHeight="28px" ml={["5px","60px","60px","60px","120px"]} letterSpacing="3px">
+                  <Text color="white" width={["90vw","90vw","300px","450px","650px"]} textAlign="justify"  mt={["25px","25px","20px","10px","80px"]} lineHeight="28px" ml={["5px","60px","60px","60px","120px"]} letterSpacing="3px">
                  
 Astrological tattoos are celestial narratives etched into the skin, where cosmic symbols and imagery become a personal testament to one's astrological identity. This unique form of body art allows individuals to embody the essence of their zodiac sign, planetary influences, or celestial alignments in intricate and symbolic designs.
 
@@ -28,7 +28,7 @@ Each symbol and element within an astrological tattoo carries profound significa
                 </Center>
                 <Center>
                 <Box mt="30px">
-              <Button colorScheme='red' leftIcon={<PhoneIcon />}><a href="tel:+916382120489" cursor="pointer">Free Consultation</a></Button>
+              <Button bg='#6ae0e9'   _hover={{ bg: "#1be4ec" }} leftIcon={<PhoneIcon />}><a href="tel:+916382120489" cursor="pointer">Free Consultation</a></Button>
     
               </Box>
                 </Center>
@@ -85,7 +85,7 @@ Each symbol and element within an astrological tattoo carries profound significa
               <GridItem w="100%" h="100%">
                 <Center>
                   <Box mt={["","","300px"]} className='rahul'>
-                  <Text width={["90vw","90vw","90vw"]}  lineHeight="28px" ml={["10px","10px","10px",]} letterSpacing="3px" className='p'>
+                  <Text  color="white" width={["90vw","90vw","90vw"]} textAlign="justify"  lineHeight="28px" ml={["10px","10px","10px",]} letterSpacing="3px" className='p'>
                   Astrological tattoos are celestial narratives etched into the skin, where cosmic symbols and imagery become a personal testament to one's astrological identity. This unique form of body art allows individuals to embody the essence of their zodiac sign, planetary influences, or celestial alignments in intricate and symbolic designs.
 
 Each symbol and element within an astrological tattoo carries profound significance, reflecting the traits, energies, and archetypes associated with specific celestial bodies or astrological signs. Whether it's the iconic glyph of one's sun sign, the intricate patterns of constellations, or representations of planetary alignments, these tattoos serve as a visual manifestation of one's cosmic connection and personal journey through the cosmos.
@@ -94,7 +94,7 @@ Each symbol and element within an astrological tattoo carries profound significa
                   </Center>
                   <Center>
                 <Box mt="30px">
-              <Button colorScheme='red' leftIcon={<PhoneIcon />}><a href="tel:+916382120489" cursor="pointer">Free Consultation</a></Button>
+              <Button bg='#6ae0e9'   _hover={{ bg: "#1be4ec" }} leftIcon={<PhoneIcon />}><a href="tel:+916382120489" cursor="pointer">Free Consultation</a></Button>
     
               </Box>
                 </Center>

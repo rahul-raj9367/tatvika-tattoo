@@ -12,20 +12,20 @@ export default function PheonixTattoo() {
       }, []);
       return (
       
-        <Box pt="100px" bg="#f5f4f0" pb="205px">
+        <Box pt="100px" bg="#333333" pb="205px">
           <Box>
             {/* Grid 1 */}
             <Grid className='welcome' display={["none","none","none","flex","flex"]} templateColumns={['repeat(1, 1fr)','repeat(1, 1fr)','repeat(1, 1fr)','repeat(2, 1fr)','repeat(2, 1fr)']}>
               <GridItem w="100%" h="100%"  >
               <Center>
-                  <Text width={["90vw","90vw","300px","450px","650px"]} mt={["25px","25px","20px","10px","80px"]} lineHeight="28px" ml={["5px","60px","60px","60px","120px"]} letterSpacing="3px">
+                  <Text color="white" width={["90vw","90vw","300px","450px","650px"] } textAlign="justify" mt={["25px","25px","20px","10px","80px"]} lineHeight="28px" ml={["5px","60px","60px","60px","120px"]} letterSpacing="3px">
                   A phoenix tattoo is a striking symbol of rebirth, transformation, and resilience. This legendary bird rises from its own ashes, signifying the ability to overcome adversity and emerge stronger and renewed. A phoenix tattoo is a reminder that, like the mythical bird, we too can face challenges, endure hardships, and emerge from the flames of life's trials with newfound strength and purpose.
 Whether you opt for a vibrant and colorful design or a more intricate, detailed portrayal of the phoenix, your tattoo can serve as a testament to your own ability to rise above challenges and embrace personal growth. It is a powerful representation of the cycle of life, death, and rebirth, making it a meaningful choice for those who wish to express their resilience and inner strength through body art.
                 </Text>
                 </Center>
                 <Center>
                 <Box mt="30px">
-              <Button colorScheme='red' leftIcon={<PhoneIcon />}><a href="tel:+916382120489" cursor="pointer">Free Consultation</a></Button>
+              <Button bg='#6ae0e9'   _hover={{ bg: "#1be4ec" }} leftIcon={<PhoneIcon />}><a href="tel:+916382120489" cursor="pointer">Free Consultation</a></Button>
     
               </Box>
                 </Center>
@@ -82,14 +82,14 @@ Whether you opt for a vibrant and colorful design or a more intricate, detailed 
               <GridItem w="100%" h="100%">
                 <Center>
                   <Box mt={["","","300px"]} className='rahul'>
-                  <Text width={["90vw","90vw","90vw"]}  lineHeight="28px" ml={["10px","10px","10px",]} letterSpacing="3px" className='p'>A phoenix tattoo is a striking symbol of rebirth, transformation, and resilience. This legendary bird rises from its own ashes, signifying the ability to overcome adversity and emerge stronger and renewed. A phoenix tattoo is a reminder that, like the mythical bird, we too can face challenges, endure hardships, and emerge from the flames of life's trials with newfound strength and purpose.
+                  <Text color="white" width={["90vw","90vw","90vw"]} textAlign="justify"  lineHeight="28px" ml={["10px","10px","10px",]} letterSpacing="3px" className='p'>A phoenix tattoo is a striking symbol of rebirth, transformation, and resilience. This legendary bird rises from its own ashes, signifying the ability to overcome adversity and emerge stronger and renewed. A phoenix tattoo is a reminder that, like the mythical bird, we too can face challenges, endure hardships, and emerge from the flames of life's trials with newfound strength and purpose.
 Whether you opt for a vibrant and colorful design or a more intricate, detailed portrayal of the phoenix, your tattoo can serve as a testament to your own ability to rise above challenges and embrace personal growth. It is a powerful representation of the cycle of life, death, and rebirth, making it a meaningful choice for those who wish to express their resilience and inner strength through body art.
                     </Text>
                   </Box>
                   </Center>
                   <Center>
                 <Box mt="30px">
-              <Button colorScheme='red' leftIcon={<PhoneIcon />}><a href="tel:+916382120489" cursor="pointer">Free Consultation</a></Button>
+              <Button bg='#6ae0e9'   _hover={{ bg: "#1be4ec" }} leftIcon={<PhoneIcon />}><a href="tel:+916382120489" cursor="pointer">Free Consultation</a></Button>
     
               </Box>
                 </Center>

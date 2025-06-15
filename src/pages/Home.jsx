@@ -142,7 +142,7 @@ export default function Home() {
             </Center>
             
             
-              <Button ml={["5px","5px","5%",""]} bg='#6ae0e9' mt={["30px","30px","20px","30px"]} onClick={onOpen}>BOOK YOUR SLOT NOW</Button>
+              <Button ml={["5px","5px","5%",""]} bg='#6ae0e9'   _hover={{ bg: "#1be4ec" }} mt={["30px","30px","20px","30px"]} onClick={onOpen}>BOOK YOUR SLOT NOW</Button>
            
       
       {/* Form */}
@@ -275,7 +275,7 @@ export default function Home() {
             </DrawerBody>
             
             <DrawerFooter >    
-              <Button bg='#6ae0e9' width={["500px","500px","500px","700px","900px"]}  type="submit">Submit</Button>
+              <Button bg='#6ae0e9' _hover={{ bg: "#1be4ec" }} width={["500px","500px","500px","700px","900px"]}  type="submit">Submit</Button>
             </DrawerFooter>
          
         </DrawerContent>
@@ -349,7 +349,7 @@ export default function Home() {
         </Center>
         <Center>
           <Box mt="100px">
-          <Button bg='#6ae0e9' leftIcon={<PhoneIcon />}><a href="tel:+916382120489" cursor="pointer">Talk to Us</a></Button>
+          <Button bg='#6ae0e9'   _hover={{ bg: "#1be4ec" }} leftIcon={<PhoneIcon />}><a href="tel:+916382120489" cursor="pointer">Talk to Us</a></Button>
 
           </Box>
         </Center>
@@ -715,7 +715,7 @@ export default function Home() {
       </Box> */}
       <Box pt="100px" pb="100px" overflow="hidden" className='welcome'>
         <Center>
-        <a href="https://www.google.com/search?q=tatvika+tattoo&oq=tatvika+tattoo+&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDsyCQgCEAAYDRiABDIGCAMQRRhAMgoIBBAAGAgYDRgeMgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEIMjYwNWowajSoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x3b043ddfd85a19e7:0x193a9cffd2867937,1,,,," target='_blank'><Button colorScheme='black' mb="20px" variant='outline'>See All Reviews </Button></a>
+        <a href="https://www.google.com/search?sca_esv=d572c6a4b45d64e1&sxsrf=AE3TifPQ82N-NIlfOH4zjtszWFf5W8DzaQ:1749997562446&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E1z_NtdQdjT8IUmRGyIE46djnpMYMNzL15yyZ_bJ3xhTiJ7wIJQ3N_6NArxpptXNWTblPgCJrqdiGiXSXAKCVujGApvNkUaYdmKWiQQXnZRZJ70aVw%3D%3D&q=Tatvika+Tattoo+%26+Piercing+Reviews&sa=X&ved=2ahUKEwji5sT40PONAxWLSmwGHXMkD5cQ0bkNegQINxAE&biw=1536&bih=730&dpr=1.25" target='_blank'><Button colorScheme='black' mb="20px" variant='outline'>See All Reviews </Button></a>
         </Center>
         <Center>
           <Carousel
