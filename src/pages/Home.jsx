@@ -363,7 +363,7 @@ export default function Home() {
 
 
       {/*Categories Tattoo*/}
-      <Box bg="#333333" pb="15px" >
+      <Box bg="#333333">
         <Box>
         <Grid className='welcome' templateColumns={['repeat(1, 1fr)','repeat(1, 1fr)','repeat(2, 1fr)','repeat(2, 1fr)','repeat(4, 1fr)']} gap={6}>
           <GridItem  mt="50px" >
@@ -591,7 +591,7 @@ export default function Home() {
         </Box>
 
 
-        <Box>
+        <Box pb="15px">
         <Grid className='welcome' templateColumns={['repeat(1, 1fr)','repeat(1, 1fr)','repeat(2, 1fr)','repeat(2, 1fr)','repeat(4, 1fr)']} gap={6}>
           {/* <GridItem  mt="50px">
               <Center>
@@ -611,7 +611,7 @@ export default function Home() {
               </Center>
            
           </GridItem> */}
-           <GridItem mt="50px">
+           <GridItem mt="0px">
           <Center>
               <Card borderRadius="20px" data-aos="fade-down" data-aos-delay="100">
               <CardBody>
@@ -628,7 +628,7 @@ export default function Home() {
               </Card>
               </Center>
           </GridItem> 
-          <GridItem mt="50px">
+          <GridItem mt="0px">
           <Center>
               <Card borderRadius="20px" data-aos="fade-down" data-aos-delay="100">
               <CardBody>
