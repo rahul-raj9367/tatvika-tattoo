@@ -45,9 +45,10 @@ export default function Footer() {
             <GridItem w='100%' h='100%'>
             <Center>
                 <AspectRatio height={["100%"]} ml={["","","30px","30px","30px"]} width={["90%","90%","380px","550px"]} border="4px" borderColor="#f5f4f0">
-                <iframe
+                {/* <iframe
                   src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15774.062816113757!2d77.5239693!3d8.7374507!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b043ddfd85a19e7%3A0x193a9cffd2867937!2sTatvika%20Tattoo%20%26%20Piercing!5e0!3m2!1sen!2sin!4v1697950008035!5m2!1sen!2sin"
-                />
+                /> */}
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.907004878078!2d77.7295754!3d8.7003811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0413005c140515%3A0x6be5dd5fac406745!2sTatvika%20Tattoo%20%26%20Piercing!5e0!3m2!1sen!2sin!4v1749994302249!5m2!1sen!2sin" />
               </AspectRatio>
             </Center>
             </GridItem>
@@ -137,7 +138,7 @@ export default function Footer() {
         <Grid  templateColumns={['repeat(1, 1fr)','repeat(2, 1fr)','repeat(2, 1fr)']} gap={6}>
             <GridItem w='100%' h='10'>
                 <List mt={["25px","25px","25px","50px"]}  ml={["0px","","12px","12px","80px"]}>
-                    <ListItem  color="white" ml="18px">© 2023. Tatvika Tattoo. </ListItem>
+                    <ListItem  color="white" ml="18px">© 2025. Tatvika Tattoo. </ListItem>
                 </List>
             </GridItem>
             <GridItem w='100%' h='10' >

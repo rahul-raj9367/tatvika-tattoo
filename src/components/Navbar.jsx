@@ -118,10 +118,10 @@ export default function Navbar() {
  
   return (
     <Box>
-    <Box as="div"  position={["fixed"]}  bg="white" width="100vw" top="0" left="0" alignItems="center"  justifyContent="center" zIndex={99} >
+    <Box as="div"  position={["fixed"]}  bg="black" width="100vw" top="0" left="0" alignItems="center"  justifyContent="center" zIndex={99} >
         <Flex as="nav" className="NAV"  width="100vw" height="70px" >
             <a href='/tatvika-tattoo/'>
-                <Image borderRadius='full' height={["70px"]} width={["280px","180px"]}  src='images/tatlogo.png' alt='VV Rice Mill' ml={["8px","15px"]} />
+                <Image borderRadius='full' height={["70px"]} width={["280px","180px"]}  src='images/new_logo.jpeg' alt='Tatvika Tattoo' ml={["8px","15px"]} />
             </a>
         <IconButton
             position="fixed"
@@ -132,14 +132,14 @@ export default function Navbar() {
             align="right"
             icon={<HamburgerIcon />}
             display={['flex','flex','none','none']}
-            color="black"  bg="transparent" _hover={{ bg: 'transparent' }}
+            color="white"  bg="transparent" _hover={{ bg: 'transparent' }}
             onClick={()=>ChangeDisplay('flex')}/>
 
         {/*Mobile View  */}
         <Flex
             w="100vw"
             h="100vh"
-            bgColor="#f5f4f0"
+            bgColor="black"
             position="fixed"
             top="0"
             right="0"
@@ -156,7 +156,7 @@ export default function Navbar() {
                 aria-label="Close Menu"
                 fontSize='23px'
                 icon={<CloseIcon />}
-                color="black" bg="transparent" _hover={{ bg: 'transparent' }}
+                color="white" bg="transparent" _hover={{ bg: 'transparent' }}
                 onClick={()=>ChangeDisplay('none')}></IconButton>
             </Flex>
                 <Flex 
@@ -167,7 +167,7 @@ export default function Navbar() {
                         <Center>
                         <ListItem   mb="30px">
                         <NavLink >
-                            <Link to="/" onClick={()=>ChangeDisplay('none')}><Text fontFamily="Montserrat" fontSize='lg' as='b' color="black">HOME</Text></Link>
+                            <Link to="/" onClick={()=>ChangeDisplay('none')}><Text fontFamily="Montserrat" fontSize='lg' as='b' color="white">HOME</Text></Link>
                         </NavLink>
                         </ListItem>
                         </Center>
@@ -175,7 +175,7 @@ export default function Navbar() {
                         <Center>
                         <ListItem   mb="30px">
                         <NavLink >
-                            <Link to="/About" onClick={()=>ChangeDisplay('none')}><Text fontFamily="Montserrat"  fontSize='lg' as='b' color="black">ABOUT</Text></Link>
+                            <Link to="/About" onClick={()=>ChangeDisplay('none')}><Text fontFamily="Montserrat"  fontSize='lg' as='b' color="white">ABOUT</Text></Link>
                         </NavLink>
                         </ListItem>
                         </Center>
@@ -183,7 +183,7 @@ export default function Navbar() {
                         <Center>
                         <ListItem  mb="30px" >
                             <NavLink>
-                                <Link to="/Service" onClick={()=>ChangeDisplay('none')}><Text fontFamily="Montserrat" fontSize='lg' as='b' color="black">SERVICES</Text></Link>
+                                <Link to="/Service" onClick={()=>ChangeDisplay('none')}><Text fontFamily="Montserrat" fontSize='lg' as='b' color="white">SERVICES</Text></Link>
                             </NavLink>
                             </ListItem>
                         </Center>
@@ -191,7 +191,7 @@ export default function Navbar() {
                         <Center>
                         <ListItem   mb="30px">
                         <NavLink >
-                            <Link to="/Blog" onClick={()=>ChangeDisplay('none')}><Text fontSize='lg' fontFamily="Montserrat" as='b' color="black">BLOG</Text></Link>
+                            <Link to="/Blog" onClick={()=>ChangeDisplay('none')}><Text fontSize='lg' fontFamily="Montserrat" as='b' color="white">BLOG</Text></Link>
                         </NavLink>
                         </ListItem>
                         </Center>
@@ -200,7 +200,7 @@ export default function Navbar() {
                         <ListItem  mb="30px">
                         <NavLink >
                             <span onClick={()=>ChangeDisplay('none')}>
-                            <Text onClick={onOpen} fontSize='lg' as='b' fontFamily="Montserrat" color="black">CONTACT</Text>
+                            <Text onClick={onOpen} fontSize='lg' as='b' fontFamily="Montserrat" color="white">CONTACT</Text>
                               </span>
                         </NavLink>
                         </ListItem>
@@ -209,7 +209,7 @@ export default function Navbar() {
                         <Center>
                         <ListItem  mb="30px">
                         <NavLink >
-                            <Link to="/Faq" onClick={()=>ChangeDisplay('none')}><Text fontSize='lg' fontFamily="Montserrat" as='b' color="black">FAQ</Text></Link>
+                            <Link to="/Faq" onClick={()=>ChangeDisplay('none')}><Text fontSize='lg' fontFamily="Montserrat" as='b' color="white">FAQ</Text></Link>
                         </NavLink>
                         </ListItem>
                         </Center>
@@ -227,32 +227,32 @@ export default function Navbar() {
             <List display={['none','none','flex','flex']}  alignItems={['none','none',"center","center"]} justifyContent={['none','none',"flex-end","flex-end"]}>
                 <ListItem  mr={["30px","30px","25px","40px"]} mt="7px">
                     <NavLink >
-                    <Link to="/" onClick={()=>ChangeDisplay('none')}><Text fontSize='lg' as='b' fontFamily="Montserrat" color="black">HOME</Text></Link>
+                    <Link to="/" onClick={()=>ChangeDisplay('none')}><Text fontSize='lg' as='b' fontFamily="Montserrat" color="white">HOME</Text></Link>
                     </NavLink>
                 </ListItem>
                 <ListItem  mr={["30px","30px","25px","40px"]} mt="7px">
                     <NavLink>
-                    <Link to="/About" onClick={()=>ChangeDisplay('none')}><Text fontSize='lg' as='b' fontFamily="Montserrat" color="black">ABOUT</Text></Link>
+                    <Link to="/About" onClick={()=>ChangeDisplay('none')}><Text fontSize='lg' as='b' fontFamily="Montserrat" color="white">ABOUT</Text></Link>
                     </NavLink>
                 </ListItem>
                 <ListItem   mr={["30px","30px","25px","40px"]} mt="7px">
                     <NavLink>
-                    <Link to="/Service"  onClick={()=>ChangeDisplay('none')}><Text fontSize='lg' as='b' fontFamily="Montserrat" color="black">SERVICES</Text></Link>
+                    <Link to="/Service"  onClick={()=>ChangeDisplay('none')}><Text fontSize='lg' as='b' fontFamily="Montserrat" color="white">SERVICES</Text></Link>
                     </NavLink>
                 </ListItem>
                 <ListItem   mr={["30px","30px","25px","40px"]} mt="7px">
                     <NavLink >
-                    <Link to="/Blog" onClick={()=>ChangeDisplay('none')}><Text fontSize='lg' as='b' fontFamily="Montserrat" color="black">BLOG</Text></Link>
+                    <Link to="/Blog" onClick={()=>ChangeDisplay('none')}><Text fontSize='lg' as='b' fontFamily="Montserrat" color="white">BLOG</Text></Link>
                     </NavLink>
                 </ListItem>
                 <ListItem   mr={["30px","30px","25px","40px"]} mt="7px">
                     <NavLink >
-                    <Text onClick={onOpen} fontSize='lg' as='b' fontFamily="Montserrat" color="black">CONTACT </Text>
+                    <Text onClick={onOpen} fontSize='lg' as='b' fontFamily="Montserrat" color="white">CONTACT </Text>
                     </NavLink>
                 </ListItem>
                 <ListItem   mr={["30px","30px","25px","40px"]} mt="7px">
                     <NavLink >
-                    <Link to="/Faq" onClick={()=>ChangeDisplay('none')}><Text fontFamily="Montserrat" fontSize='lg' as='b' color="black">FAQ </Text></Link>
+                    <Link to="/Faq" onClick={()=>ChangeDisplay('none')}><Text fontFamily="Montserrat" fontSize='lg' as='b' color="white">FAQ </Text></Link>
                     </NavLink>
                 </ListItem>
             </List>
@@ -274,7 +274,7 @@ export default function Navbar() {
           <DrawerCloseButton />
           <DrawerHeader>
             <Center>
-              <Heading fontSize='xl' color="red.500">Let's Connect</Heading>
+              <Heading fontSize='xl' color="#6ae0e9">Let's Connect</Heading>
             </Center>
             <Center>
               <Text mt="5px" fontSize={['sm',"sm","lg"]}>Fill out the form below and you will receive a call back shortly</Text>
@@ -354,35 +354,6 @@ export default function Navbar() {
                 </FormControl>
                 </Box>
 
-                {/* <Box>
-                <FormControl isRequired>
-                  <FormLabel>Location of Tattoo in your Body</FormLabel>
-                  <Input
-                    type="text" 
-                    variant='filled'
-                    
-                    placeholder='Please enter location'
-                    name="mobileNumber"
-                    value={mobileNumber}
-                    onChange={(e) => setmobileNumber(e.target.value)}
-                  />
-                  </FormControl>
-                </Box>
-
-                <Box>
-                <FormControl isRequired>
-                  <FormLabel>Approximate Size </FormLabel>
-                  <Input
-                    type="text" 
-                    variant='filled'
-                    
-                    placeholder='Please enter size'
-                    name="mobileNumber"
-                    value={mobileNumber}
-                    onChange={(e) => setmobileNumber(e.target.value)}
-                  />
-                  </FormControl>
-                </Box> */}
               
                 <Box>
                 <FormControl isRequired>
@@ -420,7 +391,7 @@ export default function Navbar() {
             </DrawerBody>
             
             <DrawerFooter >    
-              <Button colorScheme='red' width={["500px","500px","500px","700px","900px"]}  type="submit" 
+              <Button bg='#6ae0e9' width={["500px","500px","500px","700px","900px"]}  type="submit" 
                
               >Submit</Button>
             </DrawerFooter>

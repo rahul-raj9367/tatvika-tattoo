@@ -24,11 +24,11 @@ export default function Service() {
             <Grid  templateColumns={['repeat(1, 1fr)','repeat(1, 1fr)','repeat(1, 1fr)','repeat(2, 1fr)']} gap={10}>
                 <GridItem w="100%" h="100%" data-aos="fade-down" data-aos-delay="100">
                     <Center>
-                    <Flex alignItems="center" justifyContent="center" w={["80vw","400px"]} h={["300px","400px"]} bg="#f5f4f0" borderRadius="10px" boxShadow="2xl"> 
+                    <Flex alignItems="center" justifyContent="center" w={["80vw","400px"]} h={["300px","400px"]} bg="#333333" borderRadius="10px" boxShadow="2xl"> 
                         <Box>
-                            <Heading  fontFamily="Montserrat">Tattoos</Heading>
+                            <Heading color="white"  fontFamily="Montserrat">TATTOOS</Heading>
                             <Flex>
-                                <Link to="/Tattoos"><Button colorScheme='red' _hover={{ bg: 'red', color: 'white' }} >Know More</Button></Link>
+                                <Link to="/Tattoos"><Button bg='#6ae0e9' _hover={{ bg: '#1be4ec', color: 'black' }} >Know More</Button></Link>
                             </Flex>
                         </Box>
                     </Flex>
@@ -37,11 +37,11 @@ export default function Service() {
 
                 <GridItem w="100%" h="100%" data-aos="fade-down"  data-aos-delay="100">
                 <Center>
-                    <Flex alignItems="center" justifyContent="center" w={["80vw","400px"]}  h={["300px","400px"]} bg="#f5f4f0" borderRadius="10px" boxShadow="2xl"> 
+                    <Flex alignItems="center" justifyContent="center" w={["80vw","400px"]}  h={["300px","400px"]} bg="#333333" borderRadius="10px" boxShadow="2xl"> 
                         <Box>
-                            <Heading  fontFamily="Montserrat">Piercing</Heading>
+                            <Heading color="white"  fontFamily="Montserrat">PIERCING</Heading>
                             <Flex>
-                            <Link to="/Piercing"><Button colorScheme='red' _hover={{ bg: 'red', color: 'white' }} >Know More</Button></Link>
+                            <Link to="/Piercing"><Button bg='#6ae0e9' _hover={{ bg: '#1be4ec', color: 'black' }} >Know More</Button></Link>
                             </Flex>
                         </Box>
                     </Flex>

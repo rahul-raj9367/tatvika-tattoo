@@ -122,27 +122,27 @@ export default function Home() {
 
   return (
     <Box mt="0px">
-      <Box bg="#f5f4f0" >
+      <Box bg="#333333" >
       <Grid className='welcome' templateColumns={['repeat(1, 1fr)','repeat(1, 1fr)','repeat(1, 1fr)','repeat(2, 1fr)',,'repeat(2, 1fr)']}>
       <GridItem w='100%' h='100%' mt={["110px","110px","100px","135px"]} >
         <Center>
           <Box>
           <Center>
             <Flex alignItems="center" flexDirection={["column","column","column","column","row"]}>
-            <Heading className='nn' fontFamily="Montserrat">Welcome to&nbsp;</Heading> <Heading  className="animated-text" fontFamily="Montserrat" color="#ff0000">{displayedText}</Heading>  
+            <Heading className='nn' fontFamily="Montserrat" color="white">Welcome to&nbsp;</Heading> <Heading  className="animated-text" fontFamily="Montserrat" color="#6ae0e9">{displayedText}</Heading>  
             </Flex>
             </Center>
             <Center mt={["25px","25px","20px","25px"]}>
-                <Text fontFamily="Montserrat" fontWeight={100}> Where Ink Meets Artistry!</Text>
+                <Text fontFamily="Montserrat" color="white" fontWeight={100}> Where Ink Meets Artistry!</Text>
             </Center>
             <Center>
-              <Text width={["90vw","90vw","500px","500px"]} mt={["25px","25px","20px","25px"]} lineHeight="28px" ml={["5px",""]} >
+              <Text color="white" width={["90vw","90vw","500px","500px"]} mt={["25px","25px","20px","25px"]} lineHeight="28px" ml={["5px",""]} >
               Unlock the world of unparalleled self-expression through the power of tattoos. Our expert artists bring your visions to life with precision and creativity. Whether you're a first-timer or an ink enthusiast, step into a realm where every tattoo tells a unique story. Your journey starts here - book your appointment now and let your inked masterpiece come to life.
               </Text>
             </Center>
             
             
-              <Button ml={["5px","5px","5%",""]} colorScheme='red' mt={["30px","30px","20px","30px"]} onClick={onOpen}>BOOK YOUR SLOT NOW</Button>
+              <Button ml={["5px","5px","5%",""]} bg='#6ae0e9' mt={["30px","30px","20px","30px"]} onClick={onOpen}>BOOK YOUR SLOT NOW</Button>
            
       
       {/* Form */}
@@ -275,7 +275,7 @@ export default function Home() {
             </DrawerBody>
             
             <DrawerFooter >    
-              <Button colorScheme='red' width={["500px","500px","500px","700px","900px"]}  type="submit">Submit</Button>
+              <Button bg='#6ae0e9' width={["500px","500px","500px","700px","900px"]}  type="submit">Submit</Button>
             </DrawerFooter>
          
         </DrawerContent>
@@ -349,7 +349,7 @@ export default function Home() {
         </Center>
         <Center>
           <Box mt="100px">
-          <Button colorScheme='red' leftIcon={<PhoneIcon />}><a href="tel:+916382120489" cursor="pointer">Talk to Us</a></Button>
+          <Button bg='#6ae0e9' leftIcon={<PhoneIcon />}><a href="tel:+916382120489" cursor="pointer">Talk to Us</a></Button>
 
           </Box>
         </Center>
@@ -363,7 +363,7 @@ export default function Home() {
 
 
       {/*Categories Tattoo*/}
-      <Box bg="#f5f4f0" >
+      <Box bg="#333333" pb="15px" >
         <Box>
         <Grid className='welcome' templateColumns={['repeat(1, 1fr)','repeat(1, 1fr)','repeat(2, 1fr)','repeat(2, 1fr)','repeat(4, 1fr)']} gap={6}>
           <GridItem  mt="50px" >
@@ -668,7 +668,7 @@ export default function Home() {
 
 
       {/* Carousel */}
-      <Box bg="#f5f4f0">
+      <Box bg="#fff">
       {/* <Box pt="100px" pb="100px" overflow="hidden" className='welcome'>
       <Center>
         <Carousel

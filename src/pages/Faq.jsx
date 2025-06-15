@@ -22,7 +22,7 @@ export default function Faq() {
           <Heading fontSize={["xl","5xl"]} fontFamily="Montserrat">Frequently Asked Questions</Heading>
         </Center>
         <Center>
-          <Heading mt="20px" mb="20px" fontSize={["2xl","5xl"]} color="#ff0000" fontFamily="Montserrat">Tattoo FAQs</Heading>
+          <Heading mt="20px" mb="20px" fontSize={["2xl","5xl"]} color="#6ae0e9" fontFamily="Montserrat">Tattoo FAQs</Heading>
         </Center>
 
         {/* Tattoos  */}
@@ -188,7 +188,7 @@ export default function Faq() {
         {/*Piercing  */}
 
         <Center>
-          <Heading mt="20px" mb="20px" fontSize={["2xl","5xl"]} color="#ff0000" fontFamily="Montserrat">Piercing FAQs</Heading>
+          <Heading mt="20px" mb="20px" fontSize={["2xl","5xl"]} color="#6ae0e9" fontFamily="Montserrat">Piercing FAQs</Heading>
         </Center>
 
 

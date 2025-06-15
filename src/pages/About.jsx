@@ -25,13 +25,13 @@ export default function About() {
 
   const displayedText = text.substring(0, currentLetterIndex + 1);
   return (
-    <Box pt="100px" bg="#f5f4f0" >
+    <Box pt="100px" bg="#fff" >
       {/* Desktop */}
       <Box pb={["0px","0px","0px","0px","0px","170px"]}>
         <Grid className="welcome" display={["none","none","none","flex","flex"]} templateColumns={['repeat(1, 1fr)','repeat(2, 1fr)']} gap={0}>
 
           <GridItem w="100%" h="100%">
-            <Center><Heading mt="35px" fontFamily="Montserrat" >About&nbsp;</Heading><Heading mt="35px" color="#ff0000" fontFamily="Montserrat">{displayedText}</Heading> </Center>
+            <Center><Heading mt="35px" fontFamily="Montserrat" >About&nbsp;</Heading><Heading mt="35px" color="#6ae0e9" fontFamily="Montserrat">{displayedText}</Heading> </Center>
             <Center>
             <Text mt="20px" mb="40px" textAlign="justify"  ml="30px" width={["500px","500px","500px","500px","550px"]} letterSpacing={["5px"]}  lineHeight={["20px","28px"]}>
             Welcome to Tatvika Tattoo Studio, where ink transforms into artistry under the creative guidance of our founder, Vimalesh. With a deep passion for self-expression through body art, Vimalesh has dedicated years to perfecting the craft of tattooing. Tatvika Tattoo Studio was established with the aim of offering unparalleled artistry, and Vimalesh, as the main artist, brings unparalleled expertise to every design. Our studio is a sanctuary for unique and meaningful tattoos, celebrating the beauty of individuality and storytelling through ink. Step into the world of creativity and craftsmanship at Tatvika Tattoo, where your vision becomes a stunning reality.
@@ -48,7 +48,7 @@ export default function About() {
             </Center>
            
             <Center><Heading mt="10px"  fontSize="2xl" fontFamily="Montserrat">MAIN ARTIST</Heading></Center>
-            <Center><Heading mt="10px" mb="40px" fontSize="2xl" color="#ff0000" fontFamily="Montserrat">VIMALESH</Heading></Center>
+            <Center><Heading mt="10px" mb="40px" fontSize="2xl" color="#6ae0e9" fontFamily="Montserrat">VIMALESH</Heading></Center>
           </GridItem>
 
           
@@ -59,7 +59,7 @@ export default function About() {
       <Grid  display={["block","block","block","none","none"]} templateColumns={['repeat(1, 1fr)','repeat(2, 1fr)']} gap={0}>
 
       <GridItem w="100%" h="100%">
-      <Center><Heading mt="10px" >About&nbsp;</Heading><Heading mt="10px" color="#ff0000">{displayedText}</Heading> </Center>
+      <Center><Heading mt="10px" >About&nbsp;</Heading><Heading mt="10px" color="#6ae0e9">{displayedText}</Heading> </Center>
         <Center>
             <Heading mt="20px" fontSize={["lg","xl","2xl"]}  fontFamily="Montserrat">FOUNDER OF TATVIKA TATTOO</Heading>
         </Center>
@@ -68,7 +68,7 @@ export default function About() {
           </Center>
         
           <Center><Heading mt="10px"  fontSize={["xl","2xl"]}  fontFamily="Montserrat">MAIN ARTIST</Heading></Center>
-          <Center><Heading mt="10px" mb="20px"fontSize={["xl","2xl"]} color="#ff0000"  fontFamily="Montserrat">VIMALESH</Heading></Center>
+          <Center><Heading mt="10px" mb="20px"fontSize={["xl","2xl"]} color="#6ae0e9"  fontFamily="Montserrat">VIMALESH</Heading></Center>
         </GridItem>
 
         <GridItem w="100%" h="100%">
