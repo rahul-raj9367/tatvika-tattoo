@@ -9,7 +9,7 @@ export default function Blog() {
         document.title = 'Blog - Tatvika Tattoo';
       }, []);
   return (
-    <Box pt="80px"  bgGradient='linear(to-r, #ffff, #f5f4f0)'>
+    <Box pt="80px"  bgGradient='linear(to-r, #ffff, #ffff)'>
         <Box  mt="100px">
             <Grid className='welcome' templateColumns={['repeat(1, 1fr)','repeat(1, 1fr)','repeat(1, 1fr)','repeat(2, 1fr)','repeat(2, 1fr)']}>
                 <GridItem w="100%" h="100%">

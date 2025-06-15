@@ -159,7 +159,7 @@ export default function Home() {
           <DrawerCloseButton />
           <DrawerHeader>
             <Center>
-              <Heading fontSize='xl' color="red.500">Let's Connect</Heading>
+              <Heading fontSize='xl' color="#6ae0e9">Let's Connect</Heading>
             </Center>
             <Center>
               <Text mt="5px" fontSize={['sm',"sm","lg"]}>Fill out the form below and you will receive a call back shortly</Text>

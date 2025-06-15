@@ -16,7 +16,7 @@ export default function Faq() {
   }, []);
 
   return (
-    <Box pt="100px" bgGradient='linear(to-r, #ffff, #f5f4f0)'>
+    <Box pt="100px" bgGradient='linear(to-r, #ffff, #ffff)'>
       <Box pb="100px"  className='welcome'>
         <Center>
           <Heading fontSize={["xl","5xl"]} fontFamily="Montserrat">Frequently Asked Questions</Heading>
